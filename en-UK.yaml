@@ -1,0 +1,9 @@
+﻿flag: 🇬🇧
+show-current-language-title: Current Language
+show-current-language-body: |
+  Current language is %language%
+  
+  Change it?
+language-edited-title: Language Edited
+language-edited-body: Language was set to %language%.
+processing: processing

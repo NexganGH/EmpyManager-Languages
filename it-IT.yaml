@@ -1,0 +1,5 @@
+﻿show-current-language-title: Linguaggio Attuale
+show-current-language-body: |
+  Il linguaggio corrente è %language%
+  
+  Cambiarlo?
