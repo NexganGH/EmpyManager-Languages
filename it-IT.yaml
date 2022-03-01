@@ -3,3 +3,4 @@ show-current-language-body: |
   Il linguaggio corrente è %language%
   
   Cambiarlo?
+change-limit-interaction-body: greve
