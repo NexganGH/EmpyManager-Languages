@@ -11,6 +11,20 @@ tempchannel-panel-body: |
   
   Use one of the **buttons** below to **edit your channel**.
 
+bot-added-title: Thanks for adding me!
+bot-added-body: |
+  Hello, thanks for adding me to your server!
+  
+  Type `v/help` to see all of my commands.
+  
+  All you have to do to get started is `{prefix}setup` to enter a guided setup.
+
+  These are some links that might be useful:
+  - [EmpyManager's Dashboard](https://dashboard.empymanager.com/)
+  - [Support Server](https://empymanager.com/support)
+  - [Docs with tutorials](https://docs.empymanager.com/)
+  - [How to create temporary channels](https://docs.empymanager.com/getting-started/create-temporary-channels)
+
 help-title: EmpyManager Commands
 help-body: |
   🌟 `v/premium` - Support the bot and get more features
@@ -142,6 +156,7 @@ info-command-body: |
   Shard ID: `%shardId%`
   Cluster ID: `%clusterId%`
   
+error: Error
 command-error-body: |
   %error%
   
@@ -183,6 +198,10 @@ claim-channel-user-left-body: Creator has left the channel. Click below to 🚩 
 claim-button-label: Claim
 
 invites-disabled-here: Invites are disabled in this server for security reasons. Ask a server admin to perform `%prefix%settings invites` for more info.
+enable-invites-title: "Invites"
+enable-invites-body: "Do you want to enable invites on this server?"
+invites-enabled: "Invites enabled."
+invites-disabled: "Invites disabled."
 
 assign-linked-roles-forbidden-error: Missing permission to assign/remove Linked Roles to user. Please, make sure that EmpyManager's role is above the assigned roles.
 assign-linked-roles-generic-error: "Couldn't assign/remove Linked Roles to user:"
