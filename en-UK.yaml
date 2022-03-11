@@ -19,7 +19,7 @@ bot-added-body: |
   
   Type `v/help` to see all of my commands.
   
-  All you have to do to get started is `{prefix}setup` to enter a guided setup.
+  All you have to do to get started is `%prefix%setup` to enter a guided setup.
 
   These are some links that might be useful:
   - [EmpyManager's Dashboard](https://dashboard.empymanager.com/)
