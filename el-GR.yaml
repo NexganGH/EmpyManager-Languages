@@ -205,7 +205,7 @@ must-be-a-moderator: Πρέπει να είστε **Συντονιστής** γ�
 
 command-disabled-here: Δεν επιτρέπεται να εκτελέσετε αυτήν την εντολή εδώ. Επικοινωνήστε με έναν διαχειριστή.
 specify-valid-masterchannel-id: Προσδιορίστε ένα έγκυρο id υπάρχοντος Κύριου καναλιού. [Δείτε το βίντεο](https://www.youtube.com/watch?v=xgjGuA-Xp4g) για να μάθετε πώς να αποκτήσετε ένα id καναλιού.
-invalid-masterchannel-id: Το κανάλι με ID: %channelId% **δεν** είναι Κύριο κανάλι. [Δείτε το βίντεο](https://www.youtube.com/watch?v=xgjGuA-Xp4g) για να μάθετε πώς να αποκτήσετε ένα id καναλιού.
+invalid-masterchannel-id: "Το κανάλι με ID: %channelId% **δεν** είναι Κύριο κανάλι. [Δείτε το βίντεο](https://www.youtube.com/watch?v=xgjGuA-Xp4g) για να μάθετε πώς να αποκτήσετε ένα id καναλιού."
 
 no-common-found: Η εντολή %command% δεν βρέθηκε.
 command-info: Πληροφορίες εντολής
