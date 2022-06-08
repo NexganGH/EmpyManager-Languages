@@ -1,0 +1,275 @@
+flag: 🇪🇸
+
+### Most important messages
+
+tempchannel-panel-title: "Chat Privado de %owner%"
+tempchannel-panel-body: |
+  ¡Bienvenido %owner% a tu chat privado!
+  Solo los usuarios conectados a tu canal podrán ver este chat, y será eliminado una vez que todos se salgan.
+
+  Tu canal está:
+  - %private%
+  - %hidden%
+  
+  Usa uno de los **botones** debajo de **editar tu canal**.
+
+bot-added-title: ¡Gracias por agregarme!
+bot-added-body: |
+  ¡Hola, gracias por agregarme a tu servidor!
+  
+  Escribe `v/help` para ver todos mis comandos.
+  
+  Todo lo que tú tienes que hacer para empezar es `%prefix%setup` para entrar a una instalación guiada.
+
+  Estos son algunos enlaces que te pueden resultar útil:
+  - [Panel de Control de EmpyManager](https://dashboard.empymanager.com/)
+  - [Servidor de Soporte](https://empymanager.com/support)
+  - [Documentos con tutoriales](https://docs.empymanager.com/)
+  - [Cómo crear canales temporales](https://docs.empymanager.com/getting-started/create-temporary-channels)
+
+setup-title: "✅ Canal Maestro Creado"
+setup-body: |
+  ✅ ¡He creado un **canal maestro** con la id `%id%` para ti!
+
+  ¡Tus usuarios pueden unirse ahora para crear sus propios canales temporales!
+  
+  Asegúrate de editarlo a tu gusto: puedes cambiar su nombre, permisos para unirse, límites de usuarios y tasa de bits.
+  
+  **Todos los canales temporales creados desde este canal maestro heredarán los límites de usuarios y tasa de bits.**
+  
+  🌐 **Panel de Control**
+  - Mira [está configuración de canal](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%).
+  - Mira [las configuraciones del servidor](https://dashboard.empymanager.com/guilds/%guildId%).
+  
+  ⌨️ **Comandos**
+  - [Todos los comandos](https://docs.empymanager.com/commands).
+  
+error-master-creation-body: |
+  Encontre un error mientras estaba creando tu canal maestro:
+  ```%error%```
+  
+  **Por favor, asegúrate de que EmpyManager tenga los permisos suficientes** (Requiere de permisos de administrado para crear un canal maestro). 
+  
+  **Unete a [este servidor](https://empymanager.com/support) para recibir soporte.**
+
+  
+help-title: Comandos de EmpyManager
+help-body: |
+  🌟 `v/premium` - Apoye al bot y obtenga más características
+  
+  -
+help-control-subtitle: 🛠️   Control your channel
+help-control-body: |
+  -
+  
+  🚫 `/private` / 🌐 `/public`
+  
+  👻 `/hide` / 👁 `/show`
+  
+  🏠 `/waitingroom`
+  
+  🚩 `/claim` - Vuélvete el propietario del canal que andas actualmente dentro (el propietario actual debe de estar desconectado).
+  
+  👞 `/kick @user` / ⛔ `/ban @user`
+  
+  🔗 `/invite @user` - Invita un usuario a tu canal (recibirá un mensaje directo).
+
+  Otros comandos: `/rename`, `/limit`, `/bitrate`.
+  
+  **Si no puedes ver los comandos de barra, dígale a un administrador que [actualice los permisos del bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+
+help-settings-subtitle: ⚙️   Configuraciones de administrador
+help-settings-body: |
+  - Solo los administradores pueden ver esto -
+  📒 `v/setup` - Crea un nuevo canal maestro y configúrelo a través de una instalación guiada.
+  
+  🖥 `v/dashboard` - Acceda al Panel de Control.
+  
+  📜 `v/masterlist` - Lista de canales maestros.
+  
+  ❌ `v/resetmasters` - Convierta todos los canales maestros en canales normales.
+  
+  ♻️ `v/refresh` - Reinicie toda la configuración de la base de datos en caso de que no esté funcionando adecuadamente.
+  
+  🔧 `v/settings` - Muestre todas las configuraciones avanzadas.
+
+invite-button-label: Invite a su servidor.
+support-button-label: Obtenga soporte y sugiera características
+dashboard-button-label: Panel de control
+vote-button-label: Votar al Bot
+
+### Commands
+
+command-was-disabled-here: Este comando fue desactivo aquí.
+
+ # Rename
+rename-command-success-title: Nombre cambiado
+rename-command-success-body: Nombre del canal cambiado a %name%.
+rename-interaction-title: "🏷 Renombre su canal"
+rename-interaction-body: "Escriba un nuevo nombre de canal aquí para 🏷 **renombrar** su canal."
+
+ # Bitrate
+change-bitrate-interaction-title: "📣 Cambiar tasa de bits"
+change-bitrate-interaction-body: "Elija un nuevo valor para 📣 la tasa de bits."
+
+ # Claim
+claim-command-success-body: ¡Hecho!
+claim-command-success-body-author: "Canal reclamado exitosamente por %author%."
+claim-channel-user-left-title: "🚩 Reclamar este canal"
+claim-channel-user-left-body: El creador abandonó el canal. Haga clic debajo para 🚩 **reclamarlo**.
+claim-button-label: Claim
+
+ # Limit
+limit-command-success-title: "👥 El Límite de Usuarios ha sido Cambiado"
+limit-command-success-body: "👥 Límite de usuarios puesto a `%limit%`"
+limit-command-unexpected-limit: Límite de valor inesperado.
+change-limit-interaction-title: "👥 Cambiar límite de usuarios"
+change-limit-interaction-body: |
+  Selecciona los **👥 límites de usuarios** que tú quieras cliqueando en los botones de abajo.
+  
+  Una vez que hayas seleccionado, cliquea en **✅ Guardar**.
+
+  Límite actual: **%limit%**.
+no-limit: Sin límites
+save-limit: Guardar (%limit% 👥)
+
+
+select-user-interaction-title: "Seleccionar un usuario"
+ # Kick
+kick-command-success-title: "👞 El usuario ha sido expulsado."
+kick-command-success-body: "👞 %target% ha sido expulsado por %author%."
+kick-command-error-must-be-connected: El usuario tiene que estar conectado para poder ser expulsado.
+kick-interaction-body: |
+  👞 Seleccione a un miembro para expulsarlo de tu canal temporal.
+  
+  ❌ ¿El usuario no se encuentra o no anda conectado? Escriba `/kick @user` para poder expulsarlo.
+
+# Ban
+ban-interaction-body: |
+  ⛔ Seleccione a un miembro para banearlo de tu canal temporal. 
+  
+  ❌ ¿El usuario no se encuentra o no anda conectado? Escriba `/ban @user` para poder banearlo.
+  
+user-banned-success-title: "⛔ Usuario baneado"
+user-banned-success-body: "⛔ %target% ha sido baneado de este canal."
+
+ban-command-success-title: "⛔ El usuario ha sido baneado"
+ban-command-success-body: "⛔ %target% fue baneado por %author%!"
+ban-command-error-must-be-connected: El usuario tiene que estar conectado para poder banearlo.
+
+
+### Quick command messages
+
+# Private
+channel-made-private-title: "🚫 Canal Privado"
+channel-made-private-body: "🚫 Este canal se ha hecho privado."
+
+# Public
+channel-made-public-title: "🌐 Canal Público"
+channel-made-public-body: "🌐 Este canal se ha hecho público."
+
+# Hidden
+channel-hidden-title: "👻 Canal Oculto"
+channel-hidden-body: "👻 Este canal se ha ocultado."
+
+# Visible
+channel-made-visible-title: "👁 Canal Visible"
+channel-made-visible-body: "👁 Este canal se ha hecho visible."
+
+# Waiting room
+waiting-room-already-enabled: La sala de espera ya está activada.
+waiting-room-already-disabled: La sala de espera ya está desactivada.
+waiting-room-default-name: "⬇️ Unirse a %owner%"
+
+waiting-room-enabled-title: "🏠 Sala de Espera Activada"
+waiting-room-enabled-body: "Este canal ahora tiene una sala de espera. Tu canal se ha establecido en 🚫 **Privado**, y otros usuarios tendrán que unirse a tu 🏠 **Sala de Espera** y ser aprobados por ti antes de entrar."
+
+waiting-room-disabled-title: "🏠 Sala de Espera Desactivada"
+waiting-room-disabled-body: "La 🏠 **Sala de Espera** se ha desactivado y tu canal se ha vuelto 🌐 **Público**."
+
+waiting-room-approve-body: Usted ha aprobado a %user% en tu sala.
+
+### General errors
+error: Error
+command-error-body: |
+  %error%
+  
+  Si necesitas más ayuda, por favor únase a el [servidor de soporte](https://empymanager.com/support) o contacte al administrador del servidor.
+target-not-found: Objetivo no encontrado.
+not-enough-permissions-command: No tienes los permisos suficientes para realizar este comando aquí.
+feature-requires-premium: Esta característica del servidor está desactivada. Considere la posibilidad de mejorar su gremio; más información en `%prefix%premium`.
+command-requires-channel: Tienes de estar en un canal temporal para usar este comando.
+action-requires-channel-owner: Tienes que ser el dueño del canal para editarlo.
+must-be-a-manager: Tienes que ser un manager para realizar este comando.
+must-be-a-moderator: Tienes que ser un moderador para realizar este comando.
+
+command-disabled-here: No está permitido realizar este comando aquí. Contacte a un administrador del servidor.
+specify-valid-masterchannel-id: Por favor, especifique una ID valida de un canal maestro existente. [Revise este video](https://www.youtube.com/watch?v=xgjGuA-Xp4g) para ver cómo obtener una ID de un canal.
+invalid-masterchannel-id: El canal con la ID %channelId% no es un canal maestro. [Revise este video](https://www.youtube.com/watch?v=xgjGuA-Xp4g) para ver cómo obtener una ID de un canal.
+
+no-common-found: El comando %command% no se encontró.
+command-info: Información de Comandos
+
+
+### Other commands
+success: Éxito.
+success-title: Éxito
+done: ¡Hecho!
+
+# Info
+info-command-title: Información del Servidor
+info-command-body: |
+  Información sobre %name%
+  ID del Servidor: `%guildId%`
+  ID del Shard: `%shardId%`
+  ID del Cluster: `%clusterId%`
+
+# Dashboard
+dashboard-command-title: Enlance del Panel del Control
+dashboard-command-body: "Puedes tener acceso al Panel del Control del Servidor aquí: %link%"
+dashboard-unauthorised-command-body: "No puedes configurar este servidor, pero puedes acceder al panel de control de EmpyManager aquí: %link%"
+
+
+
+# Permanent
+permanent-channel-success-title: Permanente
+permanent-channel-success-body: Este canal se ha vuelto permanente y no será eliminado
+temporary-channel-success-title: "⏲️ Temporal"
+temporary-channel-success-body: Este canal es ahora **⏲️ Temporal** y **será eliminado** una vez que esté vacio.
+cannot-make-more-permanent-channels: No puedes hacer más canales permanentes, estás usando %count%/%max% disponible de tu servidor.
+
+# Invites
+invites-disabled-here: Las invitaciones están desactivadas en este servidor por motivos de seguridad. Pregunte a un administrador del servidor para realizar el comando `%prefix%settings invites` para más información.
+enable-invites-title: "Invitaciones"
+enable-invites-body: ¿Quieres habilitar las invitaciones para este servidor?"
+invites-enabled: "Invitaciones activadas."
+invites-disabled: "Invitaciones desactivadas."
+
+assign-linked-roles-forbidden-error: Falta el permiso para asignar/eliminar Roles Vínculados al usuario. Por favor, este seguro de que el rol de EmpyManager esté por arriba de los roles asignados.
+assign-linked-roles-generic-error: "No pude asignar/eliminar los Roles Vínculados al usuario:"
+
+# Language
+show-current-language-title: Idioma actual
+show-current-language-body: |
+  El idioma actual es %language%
+  
+  ¿Quieres cambiarlo?
+
+language-edited-title: Idioma editado
+language-edited-body: El idioma ha sido puesto a %language%.
+
+# Premium
+not-a-premium-server: "**No** es un **Servidor Premium**. Algunas características, como el número de canales maestros, estarán limitadas."
+a-premium-server: "Un **Servidor Premium**."
+a-premium-plus-server: "Un **Servidor Premium Plus**."
+enable-premium-here: "Como eres un usuario premium, puedes activar tu premium en este gremio con `%prefix%premium enable`."
+premium-features: "Mira todas las características premium [aquí](https://dashboard.empymanager.com/premium)."
+premium-must-be-inside-server: Tienes que estar adentro del servidor.
+not-premium-provider: Tú no eres el proveedor de premium de este gremio ni tampoco un administrador.
+no-premium-subscriptions: No hay subscripciones premium en este gremio.
+premium-info: |
+  Este servidor es %type%
+
+  **Lista completa de características [aquí](https://dashboard.empymanager.com/premium).**
+  Subscribete en [Patreon](https://patreon.com/nexgan).
+  Unete al servidor oficial de [Discord](https://empymanager.com/support) para más información o alguna pregunta.
