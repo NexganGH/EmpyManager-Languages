@@ -1,0 +1,275 @@
+﻿flag: 🇭🇺
+
+### Most important messages
+
+tempchannel-panel-title: "%owner% szobája"
+tempchannel-panel-body: |
+  Üdvözöllek %owner% a privát chat szobádban!
+  Csak azok a felhasználók képesek látni ezt a chatet akik a társalgó szobában bent vannak, ez a szoba el fog tünni amint mindenki elhagyja a társalgót.
+
+  A szobád jelenleg:
+  - %private%
+  - %hidden%
+  
+  Használd a **gombokat** hogy módosítsd a **saját szobádat**.
+
+bot-added-title: Köszönöm hogy engem választottál!
+bot-added-body: |
+  Hello, köszönöm hogy hozzáadtál a szerveredhez!
+  
+  Ha látni szeretnéd az összes funkciómat írd be a `v/help` parancsot.
+  
+  Kezdésként használd a `%prefix%setup` parancsot hogy beállíts minden funkciót.
+
+  Itt van néhány link amely hasznos lehet:
+  - [EmpyManager kezelőpult](https://dashboard.empymanager.com/)
+  - [Support szerver](https://empymanager.com/support)
+  - [Dokumentumok](https://docs.empymanager.com/)
+  - [Hogyan csinálj átmeneti szobát](https://docs.empymanager.com/getting-started/create-temporary-channels)
+
+setup-title: "✅ Irányító szoba létrehozva"
+setup-body: |
+  ✅ Készítettem egy **irányító szobát** amelynek az idje `%id%`!
+
+  Most már bárki tud csatlakozni a szobába, ezzel létrehozva egy átmeneti szobát.
+  
+  Ne felejtsd el beállítani tetszésed szerint: átnevezheted, engedélyhez kötheted a szobához való csatlakozást, felhasználók számának korlátozásával és bitrate beállítással. 
+  
+  **Minden olyan átmeneti szobára amely ebből az irányító szobából lett létrehozva vonatkozni fognak a maximális felhasználó és bitrate beállítások.**
+  
+  🌐 **Kezelőpult**
+  - Mutasd [ennek a szobának a beállításait](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%).
+  - Mutasd a [szerver beállításokat](https://dashboard.empymanager.com/guilds/%guildId%).
+  
+  ⌨️ **Parancsok**
+  - [Minden parancs](https://docs.empymanager.com/commands).
+  
+error-master-creation-body: |
+  Egy hibába ütköztem az irányító szoba létrehozásánál:
+  ```%error%```
+  
+  **Kérlek győződj meg arról hogy minden engedélyt megadtál az EmpyManagernek** (Adminisztrátor engedély kell az irányító szoba létrehozásához).
+  
+  **Join [this server](https://empymanager.com/support) to receive support.**
+
+  
+help-title: EmpyManager parancsok
+help-body: |
+  🌟 `v/premium` - Támogasd a munkánkat és ezzel több funkciót is feloldhatsz
+  
+  -
+help-control-subtitle: 🛠️   Irányítsd a szobádat
+help-control-body: |
+  -
+  
+  🚫 `/private` / 🌐 `/public`
+  
+  👻 `/hide` / 👁 `/show`
+  
+  🏠 `/waitingroom`
+  
+  🚩 `/claim` - Te leszel annak a szobának a tulajdonosa amelyben vagy (a jelenlegi tulajdonos nem tartózkodhat a szobában).
+  
+  👞 `/kick @felhasználó` / ⛔ `/ban @felhasználó`
+  
+  🔗 `/invite @felhasználó` - Hívj meg egy felhasználót a szobádba (egy privát üzenetet fog kapni).
+
+  Egyéb parancsok: `/rename`, `/limit`, `/bitrate`.
+  
+  **Amennyiben nem látod a perjeles parancsokat szólj egy adminnak, hogy [frissítse a bot engedélyeit](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+
+help-settings-subtitle: ⚙️   Adminisztrátor beállítások
+help-settings-body: |
+  - Ezt csak adminisztrátorok látják -
+  📒 `v/setup` - Létrehoz egy új irányító szobát és beállítja azt.
+  
+  🖥 `v/dashboard` - Gyors kezelőpult elérést biztosít.
+  
+  📜 `v/masterlist` - Minden irányító szoba lekérdezése.
+  
+  ❌ `v/resetmasters` - Minden irányító szobát átalakít normál szobára.
+  
+  ♻️ `v/refresh` - Minden beállítást frissít az adatbázisból abban az esetben ha valami nem megfelelően működik.
+  
+  🔧 `v/settings` - Minden beállítást előhoz
+
+invite-button-label: Meghívás a szerveredre
+support-button-label: Segítségnyújtás és ötletadás
+dashboard-button-label: Kezelőpult
+vote-button-label: Szavazz a botra
+
+### Commands
+
+command-was-disabled-here: Ez a parancs itt ki van kapcsolva.
+
+ # Rename
+rename-command-success-title: Név megváltoztatva
+rename-command-success-body: A szoba neve meg lett változtatva a következőre: %name%.
+rename-interaction-title: "🏷 Nevezd át a szobád"
+rename-interaction-body: "Írd be egy nevet hogy 🏷 **átnevezd** a szobádat."
+
+ # Bitrate
+change-bitrate-interaction-title: "📣 Bitrate megváltoztatása"
+change-bitrate-interaction-body: "Válassz egy 📣 bitrate értéket."
+
+ # Claim
+claim-command-success-body: Kész!
+claim-command-success-body-author: "A szoba sikeresen %author% tulajdonába került."
+claim-channel-user-left-title: "🚩 Szoba igénylése"
+claim-channel-user-left-body: A szoba tulajdonosa kilépett a szobából. Kattints hogy a  🚩 **tiéd legyen**.
+claim-button-label: Igénylés
+
+ # Limit
+limit-command-success-title: "👥 A maximális felhasználó limit beállítva"
+limit-command-success-body: "👥 A maximális felhasználó limit jelenleg `%limit%`"
+limit-command-unexpected-limit: Érvénytelen limit.
+change-limit-interaction-title: "👥 Felhasználó limit beállítása"
+change-limit-interaction-body: |
+  Válaszd a **👥 Felhasználó limit beállítása** gombot hogy beállítsd a maximális felhasználó limitet.
+  
+  Ha kiválasztottad kattins a **✅ Mentés** gombra.
+
+  Jelenlegi limit: **%limit%**.
+no-limit: Nincs limit
+save-limit: Mentés (%limit% 👥)
+
+
+select-user-interaction-title: "Válassz ki egy felhasználót"
+ # Kick
+kick-command-success-title: "👞 Felhasználó kirúgva"
+kick-command-success-body: "👞 %target% ki lett rúgva %author% által."
+kick-command-error-must-be-connected: A felhasználónak a szobában kell tartózkodnia ahhoz hogy kirúghasd.
+kick-interaction-body: |
+  👞Válassz ki egy felhasználót aki ki akarsz rúgni a szobádból. 
+  
+  ❌ Nem létezik ilyen felhasználó vagy nincs csatlakozva a szobába? Írd be a `/kick @felhasználó` parancsot hogy kirúgd.
+
+# Ban
+ban-interaction-body: |
+  ⛔ Válassz ki egy felhasználót aki ki akarsz tiltani a szobádból. 
+  
+  ❌ Nem létezik ilyen felhasználó vagy nincs csatlakozva a szobába? Írd be a `/ban @felhasználó` parancsot hogy kitiltsd.
+  
+user-banned-success-title: "⛔ Felhasználó kitiltva"
+user-banned-success-body: "⛔ %target% ki lett tiltva a szobából."
+
+ban-command-success-title: "⛔ Felhasználó kitilva"
+ban-command-success-body: "⛔ %target% ki lett tilva %author% által!"
+ban-command-error-must-be-connected: A felhasználónak a szobában kell tartózkodnia ahhoz hogy kitilthasd.
+
+
+### Quick command messages
+
+# Private
+channel-made-private-title: "🚫 Privát szoba"
+channel-made-private-body: "🚫 A szoba mostantól privát."
+
+# Public
+channel-made-public-title: "🌐 Nyitott szoba"
+channel-made-public-body: "🌐 A szoba mostantól nyitott, bárki tud csatlakozni."
+
+# Hidden
+channel-hidden-title: "👻 Szoba elrejtve"
+channel-hidden-body: "👻 A szoba el lett rejtve."
+
+# Visible
+channel-made-visible-title: "👁 Szoba látható"
+channel-made-visible-body: "👁 A szobát mostantól mindenki látja."
+
+# Waiting room
+waiting-room-already-enabled: A várakozó szoba már be van kapcsolva.
+waiting-room-already-disabled: A várakozó szoba már ki van kapcsolva.
+waiting-room-default-name: "⬇️ %owner% várakozó szobája"
+
+waiting-room-enabled-title: "🏠 Várakozó szoba bekapcsolva"
+waiting-room-enabled-body: "A szobának mostantól van egy várakozója. A szoba át lett állítva 🚫 **Privátra**, aki csatlakozni szeretne annak a  🏠 **Várakozó szobába** kell csatlakoznia, utána pedig neked kell engedélyezned a csatlakozásukat."
+
+waiting-room-disabled-title: "🏠 Várakozó szoba kikapcsolva"
+waiting-room-disabled-body: "A 🏠 **Várakozó szoba** ki lett kapcsolva és a szoba át lett állítva 🌐 **Nyilvánosra**."
+
+waiting-room-approve-body: Engedélyezted %user% csatlakozását a szobába.
+
+### General errors
+error: Hiba
+command-error-body: |
+  %error%
+  
+  Ha bármilyen segítségre szükséged van kérlek csatlakozz a hivatalos [support szerverre](https://empymanager.com/support) vagy szólj egy adminisztrátornak.
+target-not-found: A cél nem található.
+not-enough-permissions-command: Nincs elég engedélyed ahhoz hogy ezt a parancsot használd.
+feature-requires-premium: Ez a szever funkció ki van kapcsolva. Fontold meg a szerver fejlesztését; több információ itt található `%prefix%premium`.
+command-requires-channel: Egy ideiglenes szobában kell lenned a parancs használatához.
+action-requires-channel-owner: A szoba tulajdonosának kell lenned ha ezt a parancsot akarod használni.
+must-be-a-manager: Kezelőnek kell lennek a parancs használatához.
+must-be-a-moderator: Moderátornak kell lenned a parancs használatához.
+
+command-disabled-here: Nem tudod használni ezt a parancsot ebben a szobában. Értesíts egy adminisztrátort.
+specify-valid-masterchannel-id: Légyszíves egy olyan idt használj amihez tartozik egy iránító szoba. [Nézd meg ezt a videót](https://www.youtube.com/watch?v=xgjGuA-Xp4g) hogy megtudd hogyan tudod lekérni az idt.
+invalid-masterchannel-id: Légyszíves egy olyan idt használj amihez tartozik egy iránító szoba. [Nézd meg ezt a videót](https://www.youtube.com/watch?v=xgjGuA-Xp4g) hogy megtudd hogyan tudod lekérni az idt.
+
+no-common-found: Nem található %command% parancs.
+command-info: Parancs információ
+
+
+### Other commands
+success: Siker.
+success-title: Siker
+done: Kész!
+
+# Info
+info-command-title: Szerver információk
+info-command-body: |
+  Információk %name% szerverhez
+  Szerver Id: `%guildId%`
+  Shard ID: `%shardId%`
+  Cluster ID: `%clusterId%`
+
+# Dashboard
+dashboard-command-title: Kezelőpult link
+dashboard-command-body: "A szerver kezelőpultjához itt férsz hozzá: %link%"
+dashboard-unauthorised-command-body: "Nem végezhetsz beállításokat ezen a szeveren, de elérheted az EmpyManager kezelőpultját itt: %link%"
+
+
+
+# Permanent
+permanent-channel-success-title: állandó
+permanent-channel-success-body: A szoba mostantól állandó szoba lett és nem lesz törölve.
+temporary-channel-success-title: "⏲️ Átmeneti"
+temporary-channel-success-body: A szoba mostantól **⏲️ Átmeneti** és **törölve lesz** amint senki nincs a szobában.
+cannot-make-more-permanent-channels: Nem tudsz több állandó szobát létrehozni, jelenleg %count%/%max% állandó szoba érhető el a szerveren.
+
+# Invites
+invites-disabled-here: A meghívás funkció ki van kapcsolva a biztonság érdekében. Kérj meg egy adminisztrátort hogy használja a `%prefix%settings invites` parancsot.
+enable-invites-title: "Meghívók"
+enable-invites-body: "Szeretnéd bekapcsolni a meghívókat a szerveren?"
+invites-enabled: "Meghívók bekapcsolva."
+invites-disabled: "Meghívók kikapcsolva."
+
+assign-linked-roles-forbidden-error: Nincs elég engedélyem hogy kezeljem ezt a rangot. Légyszíves nézd meg, hogy az EmpyManager rang az általad kiválasztott felett van-e.
+assign-linked-roles-generic-error: "Nem lehet adni/elvenni ezt a rangot a felhasználónak:"
+
+# Language
+show-current-language-title: Jelenlegi nyelv
+show-current-language-body: |
+  A jelenlegi nyelv: %language%
+  
+  Megváltoztatod?
+
+language-edited-title: Nyelv megváltoztatása
+language-edited-body: Nyelv átállítva erre: %language%.
+
+# Premium
+not-a-premium-server: "**Ez nem** egy **Prémium szerver**. Néhány funkció mint például az iránító szobák szába korlátozva van."
+a-premium-server: "egy **Prémium szerver**."
+a-premium-plus-server: "egy **Prémium plusz szerver**."
+enable-premium-here: "Mivel egy prémium felhasználó vagy, bekapcsolhatod a prémium funkciókat ezen a szeveren a `%prefix%premium enable` paranccsal."
+premium-features: "Nézd meg a prémium funkciókat [itt](https://dashboard.empymanager.com/premium)."
+premium-must-be-inside-server: A szerveren kell lenned.
+not-premium-provider: Nem te kezeled a prémium funckiókat ezen a szerveren, vagy nem vagy adminisztrátor.
+no-premium-subscriptions: A szerveren nincs prémium előfizetés.
+premium-info: |
+ A szerver %type%
+
+  **Minden funkciót [itt tekinthetsz meg](https://dashboard.empymanager.com/premium).**
+  Iratkozz fel a [Patreonra](https://patreon.com/nexgan).
+  Csatlakozz a hivatalos [Discord szerverre](https://empymanager.com/support) hogy több információt kaphass.
