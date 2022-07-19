@@ -27,6 +27,19 @@ bot-added-body: |
   - [Docs with tutorials](https://docs.empymanager.com/)
   - [How to create temporary channels](https://docs.empymanager.com/getting-started/create-temporary-channels)
 
+setup-no-perm-title: "Creating a Master Channel"
+setup-no-perm-body: |
+  Due to Discord's permissions, **Admin** permissions are required for the bot to create a category with correct permissions.
+  
+  However, you can follow the steps below if you want to avoid giving admin permissions:
+  ```
+  • Create a category
+  • Add full permissions to the bot in the category
+  • Use slash command: /setup-category <category>
+  ```
+setup-no-valid-category-error: Please choose a valid category. %channel% is not a category!
+setup-no-perm-in-category: Make sure EmpyManager has full permissions inside the selected category!
+
 setup-title: "✅ Master Channel Created"
 setup-body: |
   ✅ I've created a **master channel** with id `%id%` for you!
