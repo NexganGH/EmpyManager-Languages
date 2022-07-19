@@ -104,7 +104,7 @@ command-was-disabled-here: Ez a parancs itt ki van kapcsolva.
 
  # Rename
 rename-command-success-title: Név megváltoztatva
-rename-command-success-body: A szoba neve meg lett változtatva a következőre: %name%.
+rename-command-success-body: "A szoba neve meg lett változtatva a következőre: %name%."
 rename-interaction-title: "🏷 Nevezd át a szobád"
 rename-interaction-body: "Írd be egy nevet, hogy 🏷 **átnevezd** a szobádat."
 
@@ -256,7 +256,7 @@ show-current-language-body: |
   Megváltoztatod?
 
 language-edited-title: Nyelv megváltoztatása
-language-edited-body: Nyelv átállítva erre: %language%.
+language-edited-body: "Nyelv átállítva erre: %language%."
 
 # Premium
 not-a-premium-server: "**Ez nem** egy **Prémium szerver**. Néhány funkció, mint például az irányító szobák szába korlátozva van."
