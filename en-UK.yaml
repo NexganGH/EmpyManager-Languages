@@ -210,7 +210,7 @@ command-error-body: |
   If you need further assistance, please join the official [support server](https://empymanager.com/support) or contact a server admin.
 target-not-found: Target not found.
 not-enough-permissions-command: You don't have enough permissions to perform this command here.
-feature-requires-premium: This server's feature is disabled. Consider upgrading your guild; more info on `%prefix%premium`.
+feature-requires-premium: This server's feature is disabled. Consider upgrading your guild; more info on `/premium`.
 command-requires-channel: You must be in a temporary channel to use this command.
 action-requires-channel-owner: You must be the owner of the user channel to edit it.
 must-be-a-manager: You must be a manager to perform this command.
@@ -286,3 +286,65 @@ premium-info: |
   **Full feature list [here](https://dashboard.empymanager.com/premium).**
   Subscribe on [Patreon](https://patreon.com/nexgan).
   Join the official [Discord server](https://empymanager.com/support) for more info or any question.
+
+# New premium messages
+premium-info-title: "Premium Info"
+premium-info-body: |
+  Your plan type: **%userType%**
+  
+  Plan enabled in this server: **%serverType%**
+  
+  %secondPart%
+  
+  %perks%
+
+server-premium-provider: "This server's premium provider is %user%."
+server-premium-disabled-user-not-premium: |
+  %user% is premium provider for this server, but this server has no premium plan.
+  
+  This is because %user% is not a premium user anymore.
+server-premium-disabled-out-of-slots: |
+  %user% is premium provider for this server, but this server has no premium plan.
+  
+  This is because %user% is still a premium user, but their plan is already enabled in %enabledServers% out of %maxServers% available servers for their %userType% plan.
+
+enable-server-premium-user: |
+  Since you are a premium user, you can perform `/premium enable` to enable your plan in this server!
+
+premium-perks: |
+  Consider upgrading to **⭐ Premium** in order to gain the following perks where enabled:
+  • More **Master Channels** (up to unlimited)
+  • No voting required for commands
+  • More permanent channels
+  • More linked roles
+  • More self-role panels
+  • All the settings unlocked, such as choose category, logging, and much more
+  
+  ⭐ More info [here](%url%)!
+no-premium-provider: "This server does not have any premium provider. Please check the server id."
+disable-premium-no-permission-in-server-error: |
+  In order to disable premium in this server, you need to be either admin or the premium provider.
+disable-premium-no-permission-no-server-error: |
+  In order to disable premium in the selected server, you need to be its premium provider or perform this command there as an admin.
+premium-disabled-body: "Premium disabled successfully."
+premium-provider-for-title: "Your Premium Servers"
+premium-provider-for-body: |
+  Servers you are premium provider for:
+  %servers%
+  
+  Type the slash command `/premium disable <server-id>` to stop being premium provider of a server on the list.
+  
+  Your plan: %type%
+  
+  Note: if you downgrade your plan to a plan with fewer available slots, only the first servers will receive the perks! The **highlighted** servers are those where premium is currently enabled
+no-premium-title: No premium
+no-premium-body: You don't have any premium plan! Check out premium plans at https://dashboard.empymanager.com/premium.
+premium-already-enabled-error: This server already has premium enabled! Please ask an admin to turn it off if you wish to enable your plan (`/premium disable`).
+premium-max-number-of-servers-reached-error: You've already reached the maximum number of enabled guilds for your plan.
+
+premium-enabled-here-body: |
+  Premium of type %type% was enabled in this server!
+  
+  Please reach out [support](https://empymanager.com/support) if you need help.
+  
+  **Tip**: you can always your premium plan here with the command `/premium disable` and transfer it to another server!
