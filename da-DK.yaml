@@ -1,0 +1,350 @@
+﻿flag: 🇩🇰
+
+### Most important messages
+
+tempchannel-panel-title: "%owner%'s Privat Chat"
+tempchannel-panel-body: |
+  Velkommen %owner% til din private chat!
+  Kun brugere, der er forbundet til din kanal, vil se denne chat, og den vil blive slettet, når alle forlader.
+
+  Din kanal er:
+  - %private%
+  - %hidden%
+  
+  Brug en af **knapperne** nedenfor til at **redigere din kanal**.
+
+bot-added-title: Tak for at tilføje mig!
+bot-added-body: |
+  Hej, tak fordi du har tilføjet mig til din server!
+  
+  Skriv 'v/help' for at se alle mine kommandoer.
+  
+  Alt du skal gøre for at komme i gang er `%prefix%setup` for at gå ind i en guidet opsætning.
+
+  These are some links that might be useful:
+  - [EmpyManager's Dashboard](https://dashboard.empymanager.com/)
+  - [Support Server](https://empymanager.com/support)
+  - [Dokumenter med tutorials](https://docs.empymanager.com/)
+  - [Sådan opretter du midlertidige kanaler](https://docs.empymanager.com/getting-started/create-temporary-channels)
+
+setup-no-perm-title: "Oprettelse af en Masterkanal"
+setup-no-perm-body: |
+  På grund af Discords tilladelser kræves **Admin**-tilladelser, for at botten kan oprette en kategori med korrekte tilladelser.
+  
+  Du kan dog følge nedenstående trin, hvis du vil undgå at give administratortilladelser:
+  ```
+  • Opret en kategori
+  • Tilføj fulde tilladelser til botten i kategorien
+  • Brug skråstreg kommando: /setup-category <kategori>
+  ```
+setup-no-valid-category-error: Vælg venligst en gyldig kategori. %channel% er ikke en kategori!
+setup-no-perm-in-category: Sørg for, at EmpyManager har fulde tilladelser inden for den valgte kategori!
+
+setup-title: "✅ Masterkanal oprettet"
+setup-body: |
+  ✅ Jeg har oprettet en **masterkanal** med id `%id%` til dig!
+
+  Dine brugere kan nu tilslutte sig den for at oprette deres egne midlertidige kanaler.
+  
+  Sørg for at redigere det, som du vil: du kan ændre dens navn, tilladelser til at deltage, brugergrænse og bitrate. 
+  
+  **Alle midlertidige kanaler oprettet fra denne masterkanal vil arve dens brugergrænse og bitrate.**
+  
+  🌐 **Dashboard**
+  - Se [denne kanals indstillinger](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%).
+  - Se [serverens indstillinger](https://dashboard.empymanager.com/guilds/%guildId%).
+  
+  ⌨️ **Kommandoer**
+  - [Alle Kommandoer](https://docs.empymanager.com/commands).
+  
+error-master-creation-body: |
+  Jeg stødte på en fejl under oprettelse af din masterkanal:
+  ```%error%```
+  
+  **Sørg for, at EmpyManager har nok tilladelser** (det kræver administratortilladelser at oprette en masterkanal). 
+  
+  **Tilslut dig [denne server](https://empymanager.com/support) for at modtage support(vær dog opmærksom på at alt support vil foregå på engelsk).**
+
+  
+help-title: EmpyManager-kommandoer
+help-body: |
+  🌟 `v/premium` - Støt botten og få flere funktioner
+  
+  -
+help-control-subtitle: 🛠️   Kontroller din kanal
+help-control-body: |
+  -
+  
+  🚫 `/private` / 🌐 `/public`
+  
+  👻 `/hide` / 👁 `/show`
+  
+  🏠 `/waitingroom`
+  
+  🚩 `/claim` - Bliv ejer af den kanal, du i øjeblikket er inde i (den nuværende ejer skal være frakoblet).
+  
+  👞 `/kick @bruger` / ⛔ `/ban @bruger`
+  
+  🔗 `/invite @bruger` - Inviter en bruger til din kanal (de får en direkte besked).
+
+  Other commands: `/rename`, `/limit`, `/bitrate`.
+  
+  **Hvis du ikke kan se skråstreg-kommandoer, så bed en administrator om at [opdatere botten's tilladelser](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+
+help-settings-subtitle: ⚙️   Admin indstillinger
+help-settings-body: |
+  - Kun administratorer kan se dette -
+  📒 `v/setup` - Opret en ny masterkanal og sæt den op gennem en guidet opsætning.
+  
+  🖥 `v/dashboard` - Få adgang til Dashboard'et.
+  
+  📜 `v/masterlist` - Liste over masterkanaler.
+  
+  ❌ `v/resetmasters` - Gør alle masterkanalerne om til normale kanaler.
+  
+  ♻️ `v/refresh` - Opdater alle indstillinger fra databasen, hvis det ikke fungerer korrekt.
+  
+  🔧 `v/settings` - Vis alle avancerede indstillinger
+
+invite-button-label: Inviter til din server
+support-button-label: Få support og foreslå funktioner
+dashboard-button-label: Dashboard
+vote-button-label: Stem på Bot
+
+### Commands
+
+command-was-disabled-here: Denne kommando blev deaktiveret her.
+
+ # Rename
+rename-command-success-title: Navn ændret
+rename-command-success-body: Kanalnavn ændret til %name%.
+rename-interaction-title: "🏷 Omdøb din kanal"
+rename-interaction-body: "Indtast et nyt kanalnavn her for at 🏷 **omdøbe** din kanal."
+
+ # Bitrate
+change-bitrate-interaction-title: "📣 Skift bitrate"
+change-bitrate-interaction-body: "Vælg en ny 📣 bitrate-værdi."
+
+ # Claim
+claim-command-success-body: Udført!
+claim-command-success-body-author: "Kanalen blev gjort krav på af %author%."
+claim-channel-user-left-title: "🚩 Gør krav på denne kanal"
+claim-channel-user-left-body: Skaberen har forladt kanalen. Klik nedenfor for at 🚩 **kræve** det.
+claim-button-label: Kræv
+
+ # Limit
+limit-command-success-title: "👥 Brugergrænse blev ændret"
+limit-command-success-body: "👥 Brugergrænse sat til `%limit%`"
+limit-command-unexpected-limit: Uventet grænseværdi.
+change-limit-interaction-title: "👥 Skift brugergrænse"
+change-limit-interaction-body: |
+  Vælg den **👥 brugergrænse** du ønsker ved at klikke på knapperne nedenfor.
+  
+  Når du har valgt, skal du klikke på **✅ Gem**.
+
+  Current limit: **%limit%**.
+no-limit: Ingen grænse
+save-limit: Gem (%limit% 👥)
+
+
+select-user-interaction-title: "Vælg en bruger"
+ # Kick
+kick-command-success-title: "👞 Brugeren blev smidt ud"
+kick-command-success-body: "👞 %target% blev smidt ud af %author%."
+kick-command-error-must-be-connected: Brugeren skal være tilsluttet for at blive smidt ud.
+kick-interaction-body: |
+  👞 Vælg et medlem at smide ud fra din midlertidige kanal.
+  
+  ❌ Bruger ikke fundet eller ikke forbundet? Skriv `/kick @bruger` for at smide dem ud.
+
+# Ban
+ban-interaction-body: |
+  ⛔ Vælg et medlem, du vil udelukke fra din midlertidige kanal. 
+  
+  ❌ Bruger ikke fundet eller ikke forbundet? Skriv `/ban @bruger` for at udelukke dem.
+  
+user-banned-success-title: "⛔ Bruger udelukket"
+user-banned-success-body: "⛔ %target% blev udelukket fra denne kanal."
+
+ban-command-success-title: "⛔ Bruger blev udelukket"
+ban-command-success-body: "⛔ %target% blev udelukket af %author%!"
+ban-command-error-must-be-connected: Brugeren skal være tilsluttet for at blive udelukket.
+
+
+### Quick command messages
+
+# Private
+channel-made-private-title: "🚫 Kanal privat"
+channel-made-private-body: "🚫 Denne kanal er blevet gjort privat."
+
+# Public
+channel-made-public-title: "🌐 Kanal offentlig"
+channel-made-public-body: "🌐 Denne kanal er blevet gjort offentlig."
+
+# Hidden
+channel-hidden-title: "👻 Kanal skjult"
+channel-hidden-body: "👻 Denne kanal er blevet skjult."
+
+# Visible
+channel-made-visible-title: "👁 Kanal synlig"
+channel-made-visible-body: "👁 Denne kanal er blevet gjort synlig."
+
+# Waiting room
+waiting-room-already-enabled: Venterum er allerede aktiveret.
+waiting-room-already-disabled: Venteværelset er allerede deaktiveret.
+waiting-room-default-name: "⬇️ Tilslut dig %owner%"
+
+waiting-room-enabled-title: "🏠 Venteværelse aktiveret"
+waiting-room-enabled-body: "Denne kanal har nu et venteværelse. Din kanal er blevet indstillet til 🚫 **Privat**, og andre brugere skal tilslutte sig dit 🏠 **Venterum** og blive godkendt af dig, før de kan komme ind."
+
+waiting-room-disabled-title: "🏠 Venteværelse deaktiveret"
+waiting-room-disabled-body: "🏠 **Venterummet** er blevet deaktiveret, og kanalen er lavet 🌐 **Offentlig**."
+
+waiting-room-approve-body: Du har godkendt %user% i dit rum.
+
+### General errors
+error: Error
+command-error-body: |
+  %error%
+  
+  Hvis du har brug for yderligere hjælp, skal du tilmelde dig den officielle [supportserver](https://empymanager.com/support) eller kontakt en serveradministrator.
+target-not-found: Mål ikke fundet.
+not-enough-permissions-command: Du har ikke nok tilladelser til at udføre denne kommando her.
+feature-requires-premium: Denne servers funktion er deaktiveret. Overvej at opgradere dit guild; mere info om `/premium`.
+command-requires-channel: Du skal være i en midlertidig kanal for at bruge denne kommando.
+action-requires-channel-owner: Du skal være ejer af brugerkanalen for at redigere den.
+must-be-a-manager: Du skal være administrator for at udføre denne kommando.
+must-be-a-moderator: Du skal være moderator for at udføre denne kommando.
+
+command-disabled-here: Du må ikke udføre denne kommando her. Kontakt en serveradministrator.
+specify-valid-masterchannel-id: Angiv venligst et gyldigt id for en eksisterende masterkanal. [Tjek denne video](https://www.youtube.com/watch?v=xgjGuA-Xp4g) for at se, hvordan du får et kanal-id.
+invalid-masterchannel-id: Kanal med id %channelId% er ikke en masterkanal. [Tjek denne video](https://www.youtube.com/watch?v=xgjGuA-Xp4g) for at se, hvordan du får et kanal-id.
+
+no-common-found: Ingen kommando %command% fundet.
+command-info: Kommando info
+
+
+### Other commands
+success: Succes.
+success-title: Succes
+done: Udført!
+
+# Info
+info-command-title: Server Info
+info-command-body: |
+  Info for %name%
+  Server ID: `%guildId%`
+  Shard ID: `%shardId%`
+  Cluster ID: `%clusterId%`
+
+# Dashboard
+dashboard-command-title: Dashboard Link
+dashboard-command-body: "Du kan få adgang til denne servers dashboard her: %link%"
+dashboard-unauthorised-command-body: "Du kan ikke administrere denne server, men du kan få adgang til EmpyManagers Dashboard her: %link%"
+
+
+
+# Permanent
+permanent-channel-success-title: Permanent
+permanent-channel-success-body: Denne kanal er blevet permanent og vil ikke blive slettet.
+temporary-channel-success-title: "⏲️ Midlertidig"
+temporary-channel-success-body: Denne kanal er nu **⏲️ Midlertidig** og **vil blive slettet**, når den er tom.
+cannot-make-more-permanent-channels: Du kan ikke lave flere permanente kanaler, du bruger %count%/%max% til rådighed for din server.
+
+# Invites
+invites-disabled-here: Invitationer er deaktiveret på denne server af sikkerhedsmæssige årsager. Bed en serveradministrator om at udføre `%prefix%settings invites` for at få flere oplysninger.
+enable-invites-title: "Invitationer"
+enable-invites-body: "Vil du aktivere invitationer på denne server?"
+invites-enabled: "Invitationer aktiveret."
+invites-disabled: "Invitationer deaktiveret."
+
+assign-linked-roles-forbidden-error: Mangler tilladelse til at tildele/fjerne linkede roller til bruger. Sørg venligst for, at EmpyManagers rolle er over de tildelte roller.
+assign-linked-roles-generic-error: "Kunne ikke tildele/fjerne linkede roller til bruger:"
+
+# Language
+show-current-language-title: Nuværende sprog
+show-current-language-body: |
+  Nuværende sprog er %language%
+  
+  Ændre det?
+
+language-edited-title: Sprog redigeret
+language-edited-body: Sprog blev sat til %language%.
+
+# Premium
+not-a-premium-server: "**ikke** en **Premium-server**. Nogle funktioner, såsom antallet af masterkanaler, vil være begrænset."
+a-premium-server: "en **Premium Server**."
+a-premium-plus-server: "en **Premium Plus Server**."
+enable-premium-here: "Da du er en premium-bruger, kan du aktivere dit premium i dette guild med `%prefix%premium enable`."
+premium-features: "Se alle premium funktioner [her](https://dashboard.empymanager.com/premium)."
+premium-must-be-inside-server: Du skal være inde på denne server.
+not-premium-provider: Du er ikke premium-udbyderen af denne guild og heller ikke en administrator.
+no-premium-subscriptions: Der er ingen premium-abonnementer i dette guild.
+premium-info: |
+  Denne server er %type%
+
+  **Fuld funktionsliste [her](https://dashboard.empymanager.com/premium).**
+  Abonner på [Patreon](https://patreon.com/nexgan).
+  Tilslut dig den officielle [Discord-server](https://empymanager.com/support) for mere info eller spørgsmål.
+
+# New premium messages
+premium-info-title: "Premium Info"
+premium-info-body: |
+  Din plantype: **%userType%**
+  
+  Plan aktiveret på denne server: **%serverType%**
+  
+  %secondPart%
+  
+  %perks%
+
+server-premium-provider: "Denne servers premium-udbyder er %user%."
+server-premium-disabled-user-not-premium: |
+  %user% er premium-udbyder for denne server, men denne server har ingen premium-plan.
+  
+  Dette skyldes, at %user% ikke længere er en premium-bruger.
+server-premium-disabled-out-of-slots: |
+  %user% er premium-udbyder for denne server, men denne server har ingen premium-plan.
+  
+  Dette skyldes, at %user% stadig er en premium-bruger, men deres plan er allerede aktiveret i %enabledServers% ud af %maxServers% tilgængelige servere til deres %userType% plan.
+
+enable-server-premium-user: |
+  Da du er en premium-bruger, kan du udføre `/premium enable` for at aktivere din plan på denne server!
+
+premium-perks: |
+  Overvej at opgradere til **⭐ Premium** for at få følgende frynsegoder, når det er aktiveret:
+  • Flere **Masterkanaler** (op til ubegrænset)
+  • Der kræves ingen afstemning for kommandoer
+  • Flere permanente kanaler
+  • Flere forbundne roller
+  • Flere selvrollepaneler
+  • Alle indstillinger er låst op, såsom vælg kategori, logning og meget mere
+  
+  ⭐ Mere info [her](%url%)!
+no-premium-provider: "Denne server har ikke nogen premium-udbyder. Tjek venligst server-id'et."
+disable-premium-no-permission-in-server-error: |
+  For at deaktivere premium på denne server skal du enten være admin eller premium-udbyderen.
+disable-premium-no-permission-no-server-error: |
+  For at deaktivere premium på den valgte server skal du være dens premium-udbyder eller udføre denne kommando der som administrator.
+premium-disabled-body: "Premium blev deaktiveret."
+premium-provider-for-title: "Dine Premium-servere"
+premium-provider-for-body: |
+  Servere du er premium-udbyder for:
+  %servers%
+  
+  Indtast skråstreg-kommandoen `/premium disable <server-id>` for at stoppe med at være premium-udbyder af en server på listen.
+  
+  Din plan: %type%
+  
+  Bemærk: Hvis du nedgraderer din plan til en plan med færre tilgængelige slots, vil kun de første servere modtage frynsegoderne! De **fremhævede** servere er dem, hvor premium i øjeblikket er aktiveret
+no-premium-title: Ingen premium
+no-premium-body: Du har ikke nogen premium-plan! Tjek premium-planer på https://dashboard.empymanager.com/premium.
+premium-already-enabled-error: Denne server har allerede premium aktiveret! Bed en administrator om at slå det fra, hvis du ønsker at aktivere din plan (`/premium deaktiver`).
+premium-max-number-of-servers-reached-error: Du har allerede nået det maksimale antal aktiverede guilds for din plan.
+
+premium-enabled-here-body: |
+  Premium af typen %type% blev aktiveret på denne server!
+  
+  Kontakt venligst [support](https://empymanager.com/support), hvis du har brug for hjælp.
+  
+  **Tip**: du kan altid deaktivere din premium-plan her med kommandoen `/premium disable` og overføre den til en anden server!
