@@ -20,7 +20,7 @@ bot-added-body: |
   
   Ketik `v/help` untuk melihat semua perintah.
   
-  Ingin mulai semuanya gunakan perintah ini `%prefix%setup` untuk memulai panduan install.
+  Ingin mulai semuanya gunakan perintah ini `/setup` untuk memulai panduan install.
 
   Ini ada beberapa link yang mungkin berguna untuk kalian:
   - [Dashboard EmpyManager](https://dashboard.empymanager.com/)

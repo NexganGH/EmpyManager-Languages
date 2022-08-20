@@ -17,7 +17,7 @@ bot-added-body: |
   
   Taper `v/help` pour voir toutes mes commandes.
   
-  Tout ce que vous avez à faire pour commencer est `%prefix%setup` pour entrer dans une installation assistée.
+  Tout ce que vous avez à faire pour commencer est `/setup` pour entrer dans une installation assistée.
   Voici quelques liens qui pourraient vous être utiles:
   - [Tableau de bord d'EmpyManager](https://dashboard.empymanager.com/)
   - [Support](https://empymanager.com/support)

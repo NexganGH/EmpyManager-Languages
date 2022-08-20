@@ -19,7 +19,7 @@ bot-added-body: |
   
   Type `v/help` om alle commands te zien.
   
-  Om de begeleide setup te beginnen kan je `%prefix%setup` gebruiken.
+  Om de begeleide setup te beginnen kan je `/setup` gebruiken.
 
   Onderstaande links zijn misschien nuttig:
   - [EmpyManager's Dashboard](https://dashboard.empymanager.com/)

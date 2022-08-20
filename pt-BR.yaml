@@ -23,7 +23,7 @@ bot-added-body: |
 
   Digite `v/help` para ver todos os meus comandos.
 
-  Tudo o que você precisa fazer para começar é `%prefix%setup` para entrar em uma configuração guiada.
+  Tudo o que você precisa fazer para começar é `/setup` para entrar em uma configuração guiada.
 
   Estes são alguns links que podem ser úteis:
   - [Painel do EmpyManager](https://dashboard.empymanager.com/)

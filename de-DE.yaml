@@ -19,7 +19,7 @@ bot-added-body: |
   
   Gib `v/help` ein, um alle meine Befehle anzuzeigen.
   
-  wen du loslegen willst, gib `%prefix%setup` ein, um eine geführte Einrichtung zu starten.
+  wen du loslegen willst, gib `/setup` ein, um eine geführte Einrichtung zu starten.
 
   Dies sind einige Links, die nützlich sein könnten:
   - [EmpyManager's Dashboard](https://dashboard.empymanager.com/)

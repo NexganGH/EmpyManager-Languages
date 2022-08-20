@@ -19,7 +19,7 @@ bot-added-body: |
   
   Type `v/help` to see all of my commands.
   
-  All you have to do to get started is `%prefix%setup` to enter a guided setup.
+  All you have to do to get started is `/setup` to enter a guided setup.
 
   These are some links that might be useful:
   - [EmpyManager's Dashboard](https://dashboard.empymanager.com/)
@@ -123,7 +123,13 @@ rename-interaction-body: "Type a new channel name here to 🏷 **rename** your c
 
  # Bitrate
 change-bitrate-interaction-title: "📣 Change bitrate"
-change-bitrate-interaction-body: "Choose a new 📣 bitrate value."
+change-bitrate-interaction-body: "Choose a new 📣 **bitrate** value."
+
+# Region
+change-region-interaction-title: "🏳️ Change region"
+change-region-interaction-body: "Choose a new 🏳️ **region** for your channel."
+
+change-region-success-body: "🏳️ **Region** set to `%region%`"
 
  # Claim
 claim-command-success-body: Done!

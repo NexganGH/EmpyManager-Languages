@@ -19,7 +19,7 @@ bot-added-body: |
   
   Ha látni szeretnéd az összes funkciómat írd be a `v/help` parancsot.
   
-  Kezdésként használd a `%prefix%setup` parancsot, hogy beállíts minden funkciót.
+  Kezdésként használd a `/setup` parancsot, hogy beállíts minden funkciót.
 
   Itt van néhány link amely hasznos lehet:
   - [EmpyManager kezelőpult](https://dashboard.empymanager.com/)

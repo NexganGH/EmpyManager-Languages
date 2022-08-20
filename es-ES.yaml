@@ -19,7 +19,7 @@ bot-added-body: |
   
   Escribe `v/help` para ver todos mis comandos.
   
-  Todo lo que tú tienes que hacer para empezar es `%prefix%setup` para entrar a una instalación guiada.
+  Todo lo que tú tienes que hacer para empezar es `/setup` para entrar a una instalación guiada.
 
   Estos son algunos enlaces que te pueden resultar útil:
   - [Panel de Control de EmpyManager](https://dashboard.empymanager.com/)
