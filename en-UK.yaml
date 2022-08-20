@@ -68,7 +68,7 @@ error-master-creation-body: |
   
 help-title: EmpyManager Commands
 help-body: |
-  🌟 `v/premium` - Support the bot and get more features
+  🌟 `/premium` - Access the commands related to Premium.
   
   -
 help-control-subtitle: 🛠️   Control your channel
@@ -83,9 +83,9 @@ help-control-body: |
   
   🚩 `/claim` - Become the owner of the channel you are currently inside (current owner must be disconnected).
   
-  👞 `/kick @user` / ⛔ `/ban @user`
+  👞 `/kick @user` / ⛔ `/ban @user` - Ban @user from the temporary channel
   
-  🔗 `/invite @user` - Invite a user to your channel (he will get a direct message).
+  🔗 `/invite @user` - Invite a user to your channel (they will get a direct message).
 
   Other commands: `/rename`, `/limit`, `/bitrate`.
   
@@ -93,6 +93,9 @@ help-control-body: |
 
 help-settings-subtitle: ⚙️   Admin settings
 help-settings-body: |
+  - Only admins can see this -
+  📒 `/setup` - Create a new master channel and set it up.
+help-settings-body-2: |
   - Only admins can see this -
   📒 `v/setup` - Create a new master channel and set it up through a guided setup.
   
