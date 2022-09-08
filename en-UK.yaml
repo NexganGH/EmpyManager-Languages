@@ -12,6 +12,13 @@ tempchannel-panel-body: |
   - %hidden%
   
   Use one of the **buttons** below to **edit your channel**.
+  
+tempchannel-private-button: "Private"
+tempchannel-public-button: "Public"
+tempchannel-hide-button: "Hide"
+tempchannel-show-button: "Show"
+  
+
 
 bot-added-title: Thanks for adding me!
 bot-added-body: |
@@ -97,7 +104,7 @@ help-settings-body: |
   📒 `/setup` - Create a new master channel and set it up.
 help-settings-body-2: |
   - Only admins can see this -
-  📒 `v/setup` - Create a new master channel and set it up through a guided setup.
+  📒 `/setup` - Create a new master channel and set it up through a guided setup.
   
   🖥 `v/dashboard` - Access the Dashboard.
   
@@ -179,6 +186,14 @@ ban-command-success-title: "⛔ User Was Banned"
 ban-command-success-body: "⛔ %target% was banned by %author%!"
 ban-command-error-must-be-connected: The user must be connected in order to be banned.
 
+# Edit channel
+edited-channel-title: "✏ Edited Channel"
+edited-channel-body: |
+  %user% **✏ edited** %oldName% channel.
+  
+  Name: `%name%`
+  Member limit: `%limit%`
+  Bitrate: `%bitrate%`
 
 ### Quick command messages
 
@@ -263,6 +278,8 @@ cannot-make-more-permanent-channels: You cannot make more permanent channels, yo
 # Invites
 invites-disabled-here: Invites are disabled in this server for security reasons. Ask a server admin to perform `%prefix%settings invites` for more info.
 enable-invites-title: "Invites"
+invite-disabled-vote-bot: |
+  Please, vote the bot [here](https://top.gg/bot/719236419230367798/vote) to unlock invites until your vote is valid or subscribe to a donor plan (`/premium`).
 enable-invites-body: "Do you want to enable invites on this server?"
 invites-enabled: "Invites enabled."
 invites-disabled: "Invites disabled."
