@@ -47,6 +47,12 @@ new-name-input-placeholder: "My new channel name..."
 new-bitrate-input: "Bitrate"
 new-user-limit-input: "User limit"
 
+master-panel-add-title: "⭐ New Feature"
+master-panel-add-body: |
+  Hello! Sorry to bother you 😀.
+  
+  You might be interested in my latest feature: type `/master-panel <master-channel>` to create a panel with bot's commands. It can be useful if you want to have a panel without text channels. 📝
+
 bot-added-title: Thanks for adding me!
 bot-added-body: |
   Hello, thanks for adding me to your server!
