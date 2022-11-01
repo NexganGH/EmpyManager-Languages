@@ -17,7 +17,7 @@ bot-added-title: Köszönöm, hogy engem választottál!
 bot-added-body: |
   Hello! Köszönöm, hogy hozzáadtál a szerveredhez!
   
-  Ha látni szeretnéd az összes funkciómat írd be a `v/help` parancsot.
+  Ha látni szeretnéd az összes funkciómat írd be a `/help` parancsot.
   
   Kezdésként használd a `/setup` parancsot, hogy beállíts minden funkciót.
 

@@ -17,9 +17,9 @@ bot-added-title: Tak for at tilføje mig!
 bot-added-body: |
   Hej, tak fordi du har tilføjet mig til din server!
   
-  Skriv 'v/help' for at se alle mine kommandoer.
+  Skriv '/help' for at se alle mine kommandoer.
   
-  Alt du skal gøre for at komme i gang er `%prefix%setup` for at gå ind i en guidet opsætning.
+  Alt du skal gøre for at komme i gang er `/setup` for at gå ind i en guidet opsætning.
 
   These are some links that might be useful:
   - [EmpyManager's Dashboard](https://dashboard.empymanager.com/)

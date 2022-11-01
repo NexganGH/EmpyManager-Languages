@@ -17,7 +17,7 @@ bot-added-title: Bedankt voor het toevoegen!
 bot-added-body: |
   Hallo, bedankt voor het toevoegen aan de server!
   
-  Type `v/help` om alle commands te zien.
+  Type `/help` om alle commands te zien.
   
   Om de begeleide setup te beginnen kan je `/setup` gebruiken.
 

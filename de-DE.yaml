@@ -17,7 +17,7 @@ bot-added-title: Danke, dass du mich hinzugefügt hast!
 bot-added-body: |
   Hallo. Danke, dass du mich zu deinem Server hinzugefügt hast!
   
-  Gib `v/help` ein, um alle meine Befehle anzuzeigen.
+  Gib `/help` ein, um alle meine Befehle anzuzeigen.
   
   wen du loslegen willst, gib `/setup` ein, um eine geführte Einrichtung zu starten.
 
