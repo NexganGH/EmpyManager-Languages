@@ -201,6 +201,8 @@ select-user-interaction-title: "Select a user"
 kick-command-success-title: "👞 User Was Kicked"
 kick-command-success-body: "👞 %target% was kicked by %author%."
 kick-command-error-must-be-connected: The user must be connected in order to be kicked.
+kick-command-error-user-is-mod: You cannot kick a server moderator/manager.
+kick-command-error-user-has-permissions: You cannot kick %user% because they have `Manage Channel` permissions in this channel.
 kick-interaction-body: |
   👞 Select a member to kick from your temporary channel. 
   
