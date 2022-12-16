@@ -1,0 +1,411 @@
+flag: 🇹🇷️
+
+### Most important messages
+
+tempchannel-panel-title: "%owner% Özel Sohbet"
+tempchannel-panel-body: |
+  Özel sohbetine hoş geldin, %owner%!
+  Bu sohbeti sadece kanalına bağlı olan kullanıcılar görebilecek ve herkes çıktığında silinecek.
+
+  Kanalın:
+  - %private%
+  - %hidden%
+  
+  **Kanalını düzenlemek** için aşağıdaki **tuşlardan** birini kullan.
+  
+tempchannel-private-button: "Özel"
+tempchannel-public-button: "Herkese Açık"
+tempchannel-hide-button: "Gizle"
+tempchannel-show-button: "Göster"
+tempchannel-edit-button: "Kanalı Düzenle"
+tempchannel-kick-button: "Kick"
+tempchannel-ban-button: "Ban"
+
+tempchannel-generator-title: |
+  📝 Kanalını Yönet
+
+tempchannel-generator-body: |
+  Kanalını **📝 yönetmek** için aşağıdaki **tuşlara 🖱 tıkla** veya **Eğik Çizgi Komutlarını** (`/`) kullan.
+  
+  %privateCommands%
+  %hideCommands%
+  %waitingCommands%
+  %manageCommands%
+  %moveCommands%
+  %inviteCommand%
+
+tempchannel-generator-private-msg: "🚫 `/private` / 🌐 `/public`\n"
+tempchannel-generator-hide-msg: "👻 `/hide` / 👁️ `/show`\n"
+tempchannel-generator-waiting-msg: "🏠 `/waitingroom` - Kanalını **🚫 özel** yap ve **🏠 bekleme odası oluştur**.\n"
+tempchannel-generator-manage-msg: "✏ `/rename`, `/limit`, `/bitrate`\n"
+tempchannel-generator-move-msg: "👞 `/kick @kullanıcı` / ⛔ `/ban @kullanıcı`\n"
+tempchannel-generator-invite-msg: "🔗 `/invite @kullanıcı` - Bir kullanıcıya davet at.\n"
+
+edit-channel-modal-title: "Kanalını Düzenle"
+new-name-input: "İsim"
+new-name-input-placeholder: "Yeni kanal ismim..."
+new-bitrate-input: "Bitrate"
+new-user-limit-input: "Kullanıcı Limiti"
+
+master-panel-add-title: "⭐ Yeni Özellik"
+master-panel-add-body: |
+  Merhaba! Rahatsız ettiğim için özür dilerim 😀.
+  
+  En son çıkan özelliklerime bakmak isteyebilirsin: botun komutlarını içeren bir panel oluşturmak istersen `/master-panel <ana-kanal>` yaz. Metin kanalları olmadan bir panele sahip olmak istersen bu kullanışlı olabilir. 📝
+
+bot-added-title: Beni eklediğin için teşekkür ederim!
+bot-added-body: |
+  Merhaba, beni sunucuna eklediğin için teşekkürler!
+  
+  Tüm komutlarımı görmek için `/help` yaz.
+  
+  Rehberli bir kuruluma giriş yapmak için tek yapman gereken şey `/setup`.
+
+  Kullanışlı olabilecek bazı linkler:
+  - [EmpyManager'ın Dashboard'u](https://dashboard.empymanager.com/)
+  - [Destek Sunucusu](https://empymanager.com/support)
+  - [Rehberli dokümanlar](https://docs.empymanager.com/)
+  - [Geçici kanallar nasıl oluşturulur](https://docs.empymanager.com/getting-started/create-temporary-channels)
+
+setup-no-perm-title: "Ana Kanal Oluşturuluyor"
+setup-no-perm-body: |
+  Botun doğru izinlere sahip bir kategori oluşturabilmesi için Discord'un izinleri sebebiyle **Yönetici** izni gereklidir.
+  
+  Fakat yönetici izni vermek istemiyorsan aşağıdaki adımları takip edebilirsin:
+  ```
+  • Bir kategori oluştur
+  • Bota bu kategoride tam yetki ekle
+  • Eğik çizgi komutunu kullan: /setup-category <category>
+  ```
+setup-no-valid-category-error: Lütfen geçerli bir kategori seç. %channel% bir kategori değil!
+setup-no-perm-in-category: EmpyManager'ın seçilen kategoride tam yetkiye sahip olduğundan emin ol!
+
+setup-title: "✅ Ana Kanal Oluşturuldu"
+setup-body: |
+  ✅ Senin için `%id%` id'li **ana kanalı** oluşturdum!
+
+  Kullanıcıların artık bu kanala katılarak kendi geçici kanallarını oluşturabilir.
+  
+  Kanalı isteklerine göre düzenlediğinden emin ol: Kanalın ismini, katılmak için gerekli izinleri, kullanıcı limitini ve bitrate değerini değiştirebilirsin. 
+  
+  **Ana kanal kullanılarak oluşturulan tüm kanallar bu kanalın sahip olduğu kullanıcı limitine ve bitrate değerine sahip olacaktır.**
+  
+  🌐 **Dashboard**
+  - [Bu kanalın ayarlarına](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%) gözat.
+  - [Sunucu ayarlarına](https://dashboard.empymanager.com/guilds/%guildId%) gözat.
+  
+  ⌨️ **Komutlar**
+  - [Tüm Komutlar](https://docs.empymanager.com/commands).
+  
+error-master-creation-body: |
+  Ana kanalı oluştururken bir hata ile karşılaştım:
+  ```%error%```
+  
+  **Lütfen EmpyManager'ın gerekli izinlere sahip olduğundan emin ol** (bot ana kanalı oluşturabilmek için yönetici izinlerine ihtiyaç duyar). 
+  
+  **Destek almak için [bu sunucuya](https://empymanager.com/support) katılın.**
+
+  
+help-title: EmpyManager Komutları
+help-body: |
+  🌟 `/premium` - Premium ile ilgili konutlara eriş.
+  
+  -
+help-control-subtitle: 🛠️   Kanalını yönet
+help-control-body: |
+  -
+  
+  🚫 `/private` / 🌐 `/public`
+  
+  👻 `/hide` / 👁 `/show`
+  
+  🏠 `/waitingroom`
+  
+  🚩 `/claim` - Şu anda içinde bulunduğun kanalın sahipliğini al (geçerli sahip kanaldan ayrılmış olmalı).
+  
+  👞 `/kick @kullanıcı` / ⛔ `/ban @kullanıcı` - @kullanıcı'yı geçiçi kanaldan banla.
+  
+  🔗 `/invite @kullanıcı` - Bir kullanıcıyı geçici kanalına davet et (özel mesaj gönderilecek).
+
+  Diğer komutlar: `/rename`, `/limit`, `/bitrate`.
+  
+  **Eğer eğik çizgi komutlarını göremiyorsan bir yöneticiden [botun izinlerini güncellemesini](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%) iste.**
+
+help-settings-subtitle: ⚙️   Yönetim ayarları
+help-settings-body: |
+  - Burayı sadece yöneticiler görebilir -
+  📒 `/setup` - Yeni bir ana kanal oluştur ve ayarla.
+help-settings-body-2: |
+  - Burayı sadece yöneticiler görebilir -
+  📒 `/setup` - Yeni bir ana kanal oluştur ve rehber yardımıyla kur.
+  
+  🖥 `v/dashboard` - Dashboard'a eriş.
+  
+  📜 `v/masterlist` - Ana kanalları listele.
+  
+  ❌ `v/resetmasters` - Tüm ana kanalları normal kanal haline getir.
+  
+  ♻️ `v/refresh` - Ayarların düzgün çalışmaması durumunda tüm ayarları veritabanından yenile.
+  
+  🔧 `v/settings` - Tüm gelişmiş ayarları göster.
+
+invite-button-label: Kendi sunucuna davet et
+support-button-label: Destek al ve öneride bulun
+dashboard-button-label: Dashboard
+vote-button-label: Botu Oyla
+
+### Commands
+
+command-was-disabled-here: Bu komut burada devre dışı bırakıldı.
+
+ # Rename
+rename-command-success-title: İsim Değiştirildi
+rename-command-success-body: Kanal ismi %name% olarak değiştirildi.
+rename-interaction-title: "🏷 Kanalını yeniden adlandır"
+rename-interaction-body: "Kanalını 🏷 **yeniden adlandırmak** için buraya yeni kanal ismini gir."
+
+ # Bitrate
+change-bitrate-interaction-title: "📣 Bitrate değerini değiştir"
+change-bitrate-interaction-body: "Yeni bir 📣 **bitrate** değeri seç."
+
+# Region
+change-region-interaction-title: "🏳️ Bölgeyi değiştir"
+change-region-interaction-body: "Kanalın için yeni bir 🏳️ **bölge** seç."
+
+change-region-success-body: "🏳️ **Bölge**, `%region%` olarak ayarlandı."
+
+ # Claim
+claim-command-success-body: Tamamlandı!
+claim-command-success-body-author: "Kanal sahipliği, %author% tarafından basarıyla alındı."
+claim-channel-user-left-title: "🚩 Kanal sahipliğini al"
+claim-channel-user-left-body: Kanalın sahibi kanaldan ayrıldı. 🚩 **Sahipliğini almak** için aşağıya tıkla.
+claim-button-label: Sahiplik al
+
+ # Limit
+limit-command-success-title: "👥 Kullanıcı Limiti Değiştirildi"
+limit-command-success-body: "👥 Kullanıcı limiti `%limit%` olarak ayarlandı."
+limit-command-unexpected-limit: Beklenmeyen limit değeri.
+change-limit-interaction-title: "👥 Kullanıcı limitini değiştir"
+change-limit-interaction-body: |
+  Aşağıdaki butonlara tıklayarak yapmak istediğin **👥 kullanıcı limitini** seç.
+  
+  Seçtiğinde **✅ Kaydet** tuşuna tıkla.
+
+  Geçerli limit: **%limit%**.
+no-limit: Limitsiz
+save-limit: Kaydet (%limit% 👥)
+
+
+select-user-interaction-title: "Bir kullanıcı seç"
+ # Kick
+kick-command-success-title: "👞 Kullanıcı Atıldı"
+kick-command-success-body: "👞 %target%, %author% tarafından atıldı."
+kick-command-error-must-be-connected: Kullanıcının atılabilmesi için bağlı olması gereklidir.
+kick-command-error-user-is-mod: Bir moderatörü/yöneticiyi atamazsın.
+kick-command-error-user-has-permissions: "%user% kullanıcısını atamazsın çünkü bu kullanıcının bu kanalda `Kanalı Yönet` yetkisi var."
+kick-interaction-body: |
+  👞 Geçici kanalından atmak istediğin kullanıcıyı seç. 
+  
+  ❌ Kullanıcı bulunamadı veya bağlı değil mi? Onu atmak için `/kick @kullanıcı` yaz.
+
+# Ban
+ban-interaction-body: |
+  ⛔ Geçici kanalından banlamak istediğin kullanıcıyı seç.
+  
+  ❌ Kullanıcı bulunamadı veya bağlı değil mi? Onu banlamak için `/ban @kullanıcı` yaz.
+  
+user-banned-success-title: "⛔ Kullanıcı Banlandı"
+user-banned-success-body: "⛔ %target% bu kanaldan banlandı."
+
+ban-command-success-title: "⛔ Kullanıcı Banlandı"
+ban-command-success-body: "⛔ %target%, %author% tarafından banlandı!"
+ban-command-error-must-be-connected: Kullanıcının banlanabilmesi için bağlı olması gereklidir.
+
+# Edit channel
+edited-channel-title: "✏ Kanal Düzenlendi"
+edited-channel-body: |
+  %user%, %oldName% kanalını **✏ düzenledi**.
+  
+  İsim: `%name%`
+  Kullanıcı limiti: `%limit%`
+  Bitrate: `%bitrate%`
+
+### Quick command messages
+
+# Private
+channel-made-private-title: "🚫 Özel Kanal"
+channel-made-private-body: "🚫 Bu kanal özel kanal olarak ayarlandı."
+
+# Public
+channel-made-public-title: "🌐 Herkese Açık Kanal"
+channel-made-public-body: "🌐 Bu kanal herkese açık kanal olarak ayarlandı."
+
+# Hidden
+channel-hidden-title: "👻 Gizli Kanal"
+channel-hidden-body: "👻 Bu kanal gizlendi."
+
+# Visible
+channel-made-visible-title: "👁 Görünür Kanal"
+channel-made-visible-body: "👁 Bu kanal görünür yapıldı."
+
+# Waiting room
+waiting-room-already-enabled: Bekleme odası zaten etkin.
+waiting-room-already-disabled: Bekleme odası zaten devre dışı.
+waiting-room-default-name: "⬇️ %owner%'a Katıl"
+
+waiting-room-enabled-title: "🏠 Bekleme Odası Etkinleştirildi"
+waiting-room-enabled-body: "Bu kanal artık bir bekleme odasına sahip. Kanalın 🚫 **Özel** olarak ayarlandı, diğer kullanıcıların kanalına katılabilmesi için 🏠 **Bekleme Odasına** girmesi ve senin tarafından onaylanması gerekli."
+
+waiting-room-disabled-title: "🏠 Bekleme Odası Devre Dışı Bırakıldı"
+waiting-room-disabled-body: "🏠 **Bekleme Odası** devre dışı bırakıldı ve kanal 🌐 **Herkese Açık** olarak ayarlandı."
+
+waiting-room-approve-body: Odandaki %user% kullanıcısını onayladın.
+
+### General errors
+error: Hata
+command-error-body: |
+  %error%
+  
+  Daha fazla yardıma ihtiyaç duyarsan lütfen [destek sunucusuna](https://empymanager.com/support) katıl veya bir sunucu yöneticisiyle iletişime geç.
+target-not-found: Hedef bulunamadı.
+not-enough-permissions-command: Bu komutu burada kullanabilmek için yeterli izinlere sahip değilsin.
+feature-requires-premium: Bu özellik sunucuda devre dışı bırakıldı. Sunucunu yükseltmeyi bir düşün, daha fazla bilgi `/premium` komutunda.
+command-requires-channel: Bu komutu kullanabilmek için bir geçici kanalda olmalısın.
+action-requires-channel-owner: Kanalı düzenleyebilmek için kanalın yöneticisi olmalısın.
+must-be-a-manager: Bu komutu kullanabilmek için yönetici olmalısın.
+must-be-a-moderator: Bu komutu kullanabilmek için moderatör olmalısın.
+
+command-disabled-here: Bu komutu burada kullanamazsın. Bir sunucu yöneticisiyle iletişime geçin.
+specify-valid-masterchannel-id: Lütfen geçerli bir ana kanal id'si belirt. Bir kanalın id'sinin nasıl alındığını görmek istersen [bu videoya bir gözat](https://www.youtube.com/watch?v=xgjGuA-Xp4g).
+invalid-masterchannel-id: "%channelId% id'li kanal bir ana kanal değil. Bir kanalın id'sinin nasıl alındığını görmek istersen [bu videoya bir gözat](https://www.youtube.com/watch?v=xgjGuA-Xp4g)."
+
+no-common-found: "%command% komutu bulunamadı."
+command-info: Komut Bilgisi
+
+
+### Other commands
+success: Başarılı.
+success-title: Başarılı
+done: Tamamlandı!
+
+# Info
+info-command-title: Sunucu Bilgisi
+info-command-body: |
+  %name% için bilgiler
+  Sunucu ID: `%guildId%`
+  Shard ID: `%shardId%`
+  Cluster ID: `%clusterId%`
+
+# Dashboard
+dashboard-command-title: Dashboard Linki
+dashboard-command-body: "Bu sunucunun dashboard'una buradan ulaşabilirsin: %link%"
+dashboard-unauthorised-command-body: "Bu sunucuyu yönetemezsin ama EmpyManager'ın Dashboard'ına buradan ulaşabilirsin: %link%"
+
+
+
+# Permanent
+permanent-channel-success-title: Kalıcı
+permanent-channel-success-body: Bu kanal kalıcı olarak ayarlandı ve silinmeyecek.
+temporary-channel-success-title: "⏲️ Geçici"
+temporary-channel-success-body: Bu kanal **⏲️ Geçici** olarak ayarlandı ve herkes kanaldan ayrıldığında **silinecek**.
+cannot-make-more-permanent-channels: Daha fazla kalıcı kanal oluşturamazsın, sunucunda %count%/%max% kanal mevcut.
+
+# Invites
+invites-disabled-here: Bu sunucuda davetler güvenlik sebebiyle devre dışı bırakıldı. Daha fazla bilgi için bir yöneticiden `%prefix%settings invites` komutunu girmesini iste.
+enable-invites-title: "Davetler"
+invite-disabled-vote-bot: |
+  Davetlerin kilidini açmak için lütfen botu [buradan](https://top.gg/bot/719236419230367798/vote) oyla veya bir bağış planına abone ol (`/premium`).
+enable-invites-body: "Bu sunucuda davetleri etkinleştirmek ister misin?"
+invites-enabled: "Davetler etkinleştirildi."
+invites-disabled: "Davetler devre dışı bırakıldı."
+
+assign-linked-roles-forbidden-error: Bağlantılı rolleri kullanıcıdan alınabilmesi/verilebilmesi için izin eksik. Lütfen EmpyManager'ın rolünün belirtilen rolden daha üstte olduğundan emin ol.
+assign-linked-roles-generic-error: "Bağlantılı roller kullanıcıdan alınamadı/verilemedi:"
+
+# Language
+show-current-language-title: Geçerli Dil
+show-current-language-body: |
+  Geçerli dil %language%
+  
+  Değiştirmek ister misin?
+
+language-edited-title: Dil Değiştirildi
+language-edited-body: Dil, %language% olarak ayarlandı.
+
+# Premium
+not-a-premium-server: "**Premium Sunucu değil**. Bazı özellikler, örneğin ana kanalların sayısı, sınırlanacak."
+a-premium-server: "**Premium Sunucu**."
+a-premium-plus-server: "**Premium Plus Sunucu**."
+enable-premium-here: "Premium bir kullanıcı olduğun için bu sunucudaki premium'unu `%prefix%premium enable` komutu ile etkinleştirebilirsin."
+premium-features: "Tüm premium özellikleri [burada](https://dashboard.empymanager.com/premium) görebilirsin."
+premium-must-be-inside-server: Sunucunun içerisinde olmalısın.
+not-premium-provider: Bu sunucunun premium sağlayıcısı veya bir yöneticisi değilsin.
+no-premium-subscriptions: Bu sunucuda premium abonelikleri mevcut değil.
+premium-info: |
+  Bu sunucu %type%
+
+  **Tam özellik listesi [burada](https://dashboard.empymanager.com/premium).**
+  [Patreon](https://patreon.com/nexgan)'da abone ol.
+  Daha fazla bilgi için ve herhangi bir sorun varsa resmi [Discord sunucusuna](https://empymanager.com/support) katıl.
+
+# New premium messages
+premium-info-title: "Premium Bilgisi"
+premium-info-body: |
+  Plan türün: **%userType%**
+  
+  Plan bu sunucuda etkinleştirildi: **%serverType%**
+  
+  %secondPart%
+  
+  %perks%
+
+server-premium-provider: "Bu sunucunun premium sağlayıcısı %user%."
+server-premium-disabled-user-not-premium: |
+  %user%, bu sunucuda premium sağlayıcısı ama bu sunucu premium bir plana sahip değil.
+  
+  Bunun sebebi %user% artık premium bir kullanıcı değil.
+server-premium-disabled-out-of-slots: |
+  %user%, bu sunucuda premium sağlayıcısı ama bu sunucu premium bir plana sahip değil.
+  
+  Bunun sebebi, %user% hala premium bir kullanıcı ama onun %userType% planı %maxServers% sunucu hakkının %enabledServers% tanesinde zaten aktif.
+
+enable-server-premium-user: |
+  Zaten premium bir kullanıcı olduğun için `/premium enable` komutunu kullanarak bu sunucuda planını aktif edebilirsin.
+
+premium-perks: |
+  Aşağıdaki ek özellikleri kazanmak için **⭐ Premium** plana yükseltmeyi düşünün::
+  • Daha fazla **Ana Kanal** (sınırsıza kadar)
+  • Komutlar için oylamak gerekmez
+  • Daha fazla kalıcı kanal
+  • Daha fazla bağlantılı rol
+  • Daha fazla otomatik rol paneli
+  • Tüm ayarlar açılır; örneğin kategori seçimi, kayıt alma ve çok daha fazlası
+  
+  ⭐ Daha fazla bilgi [burada](%url%)!
+no-premium-provider: "Bu sunucu herhangi bir premium sağlayıcısına sahip değil. Lütfen sunucu id'sini kontrol et."
+disable-premium-no-permission-in-server-error: |
+  Bu sunucudaki premium'u devre dışı bırakabilmek için premium sağlayıcısı veya bir yönetici olman gerekli.
+disable-premium-no-permission-no-server-error: |
+  Seçilen sunucudaki premium'u devre dışı bırakabilmek için premium sağlayıcısı veya bir yönetici olarak bu komutu orada çalıştırman gerekli.
+premium-disabled-body: "Premium başarıyla devre dışı bırakıldı."
+premium-provider-for-title: "Premium Sunucuların"
+premium-provider-for-body: |
+  Premium sağladığın sunucular:
+  %servers%
+  
+  Listedeki bir sunucunun premium sağlayıcısı olmaktan çıkmak için `/premium disable <server-id>` komutunu yazın.
+  
+  Mevcut planın: %type%
+  
+  Not: planını daha az slota sahip bir plana düşürürsen sadece ilk sıradaki sunucular ek özelliklere sahip olacak! **Vurgulanmış** olan sunucular premium'un şu anda etkin olduğu sunuculardır
+no-premium-title: Premium mevcut değil.
+no-premium-body: "Herhangi bir premium plana sahip değilsin! Premium planlara bir gözat: https://dashboard.empymanager.com/premium."
+premium-already-enabled-error: Bu sunucuda premium zaten etkin! Eğer kendi planınızı aktif etmek isterseniz lütfen bir yöneticiden devre dışı bırakmasını isteyin (`/premium disable`).
+premium-max-number-of-servers-reached-error: Planınız için maksimum etkin sunucu sayısına zaten ulaştınız.
+
+premium-enabled-here-body: |
+  %tpye% premium bu sunucuda etkinleştirildi!
+  
+  Yardıma ihtiyaç duyarsanız lütfen [destekle](https://empymanager.com/support) iletişime geçin.
+  
+  **İpucu**: Buradaki premium planını her zaman `/premium disable` komutu ile devre dışı bırakabilir ve başka bir sunucuya aktarabilirsin!
