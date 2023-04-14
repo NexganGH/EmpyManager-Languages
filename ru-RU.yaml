@@ -15,8 +15,8 @@ tempchannel-panel-body: |
   
 tempchannel-private-button: "Приватный"
 tempchannel-public-button: "Публичный"
-tempchannel-hide-button: "Скрыть"
-tempchannel-show-button: "Сделать видимым"
+tempchannel-hide-button: "Скрытый"
+tempchannel-show-button: "Видимый"
 tempchannel-edit-button: "Редактировать канал"
 tempchannel-kick-button: "Выгнать"
 tempchannel-ban-button: "Забанить"
