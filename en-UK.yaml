@@ -221,6 +221,10 @@ ban-command-success-title: "⛔ User Was Banned"
 ban-command-success-body: "⛔ %target% was banned by %author%!"
 ban-command-error-must-be-connected: The user must be connected in order to be banned.
 
+# Permit user
+permit-interaction-title: t
+permit-interaction-body: b
+
 # Edit channel
 edited-channel-title: "✏ Edited Channel"
 edited-channel-body: |
