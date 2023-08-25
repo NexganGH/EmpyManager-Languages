@@ -280,6 +280,7 @@ specify-valid-masterchannel-id: Please specify a valid id of an existing master 
 invalid-masterchannel-id: Channel with id %channelId% is not a master channel. [Check this video](https://www.youtube.com/watch?v=xgjGuA-Xp4g) to see how to get a channel id.
 masterchannel-disabled-out-of-slots-error: This master channel was disabled because it exceeds this server's master channel slots. Please use another one or consider supporting the bot with `/premium`.
 masterchannel-creation-out-of-slots-error: You don't have more master channel slots available. Please, delete one of them or upgrade the server to premium (`/premium`).
+switched-channels-too-fast-error: Hey, slow down! You are switching temporary channels too fast.
 
 no-common-found: No command %command% found.
 command-info: Command Info
