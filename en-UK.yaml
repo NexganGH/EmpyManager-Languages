@@ -240,6 +240,12 @@ edited-channel-body: |
 channel-made-private-title: "🚫 Channel Private"
 channel-made-private-body: "🚫 This channel has been made private."
 
+channel-made-private-with-permit-title: "🚫 Channel Private"
+channel-made-private-with-permit-body: |
+  🚫 This channel has been made private.
+  
+  👥 Select below who you wish to give access to.
+
 # Public
 channel-made-public-title: "🌐 Channel Public"
 channel-made-public-body: "🌐 This channel has been made public."
