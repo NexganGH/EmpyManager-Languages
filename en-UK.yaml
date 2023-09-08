@@ -254,6 +254,12 @@ channel-made-public-body: "🌐 This channel has been made public."
 channel-hidden-title: "👻 Channel Hidden"
 channel-hidden-body: "👻 This channel has been hidden."
 
+channel-hidden-with-permit-title: "👻 Channel Hidden"
+channel-hidden-with-permit-body: |
+  👻 This channel has been made private.
+  
+  👥 Select below who you wish to give access to.
+
 # Visible
 channel-made-visible-title: "👁 Channel Visible"
 channel-made-visible-body: "👁 This channel has been made visible."
@@ -270,6 +276,9 @@ waiting-room-disabled-title: "🏠 Waiting Room Disabled"
 waiting-room-disabled-body: "The 🏠 **Waiting Room** has been disabled and the channel has been made 🌐 **Public**."
 
 waiting-room-approve-body: You have approved %user% in your room.
+
+# Permit user
+allow-user: "☑ Allow a user..."
 
 ### General errors
 error: Error
