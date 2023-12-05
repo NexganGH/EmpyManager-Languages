@@ -86,9 +86,9 @@ setup-body: |
 
   Người dùng của bạn hiện có thể tham gia để tạo kênh tạm thời của riêng họ.
   
-  Đảm bảo chỉnh sửa nó theo ý muốn: bạn có thể thay đổi tên, quyền tham gia, giới hạn người dùng và bitrate.
+  Đảm bảo chỉnh sửa nó theo ý muốn: bạn có thể thay đổi tên, quyền tham gia, giới hạn người và bitrate.
   
-  **Tất cả các kênh tạm thời được tạo từ kênh chính này sẽ kế thừa giới hạn người dùng và bitrate.**
+  **Tất cả các kênh tạm thời được tạo từ kênh chính này sẽ kế thừa giới hạn người và bitrate.**
   
   🌐 **Bảng điều khiển**
   - Xem [cài đặt của kênh này](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%).
@@ -172,7 +172,7 @@ change-bitrate-interaction-body: "Chọn giá trị 📣 **bitrate** mới."
 change-region-interaction-title: "🏳️ Thay đổi khu vực"
 change-region-interaction-body: "Hãy chọn 🏳️ **khu vực** mới cho kênh của bạn."
 
-change-region-success-body: "🏳️ **Vùng** được đặt thành `%khu vực%`"
+change-region-success-body: "🏳️ **Vùng** được đặt thành `%region%`"
 
  # Claim
 claim-command-success-body: Xong!
@@ -285,7 +285,7 @@ error: Lỗi
 command-error-body: |
   %error%
   
-  Nếu bạn cần hỗ trợ thêm, vui lòng tham gia [máy chủ hỗ trợ] chính thức (https://empymanager.com/support) hoặc liên hệ với quản trị viên máy chủ.
+  Nếu bạn cần hỗ trợ thêm, vui lòng tham gia [máy chủ hỗ trợ chính thức](https://empymanager.com/support) hoặc liên hệ với quản trị viên máy chủ.
 target-not-found: Không tìm thấy mục tiêu.
 not-enough-permissions-command: Bạn không có đủ quyền để thực hiện lệnh này tại đây.
 feature-requires-premium: Tính năng của máy chủ này bị vô hiệu hóa. Hãy cân nhắc việc nâng cấp máy chủ của bạn; thêm thông tin về `/premium`.
@@ -355,10 +355,10 @@ language-edited-title: Ngôn ngữ đã được chỉnh sửa
 language-edited-body: Ngôn ngữ đã được đặt thành %language%.
 
 # Premium
-not-a-premium-server: "**không phải** một **Máy chủ cao cấp**. Một số tính năng, chẳng hạn như số lượng kênh chính, sẽ bị hạn chế."
-a-premium-server: "một **Máy chủ cao cấp**."
-a-premium-plus-server: "một **Máy chủ cao cấp**."
-enable-premium-here: "Vì bạn là người dùng trả phí nên bạn có thể kích hoạt gói trả phí của mình trong máy chủ này bằng cách kích hoạt `%prefix%premium`."
+not-a-premium-server: "**không phải** một **Máy Chủ Premium**. Một số tính năng, chẳng hạn như số lượng kênh chính, sẽ bị hạn chế."
+a-premium-server: "một **Máy Chủ Premium**."
+a-premium-plus-server: "một **Máy Chủ Premium Plus**."
+enable-premium-here: "Vì bạn là người dùng trả phí nên bạn có thể kích hoạt gói trả phí của mình trong máy chủ này bằng cách kích hoạt `%prefix%premium enable`."
 premium-features: "Xem tất cả các tính năng cao cấp [tại đây](https://dashboard.empymanager.com/premium)."
 premium-must-be-inside-server: Bạn phải ở trong máy chủ này.
 not-premium-provider: Bạn không phải là nhà cung cấp cao cấp của máy chủ này và cũng không phải là quản trị viên.
@@ -392,7 +392,7 @@ server-premium-disabled-out-of-slots: |
   Điều này là do %user% vẫn là người dùng Premium, nhưng gói của họ đã được kích hoạt trong %enabledServers% trong số %maxServers% máy chủ có sẵn cho gói %userType% của họ.
 
 enable-server-premium-user: |
-  Vì bạn là người dùng Premium nên bạn có thể thực hiện `/premium Enable` để kích hoạt gói của mình trên máy chủ này!
+  Vì bạn là người dùng Premium nên bạn có thể thực hiện `/premium enable` để kích hoạt gói của mình trên máy chủ này!
 
 premium-perks: |
   Hãy cân nhắc nâng cấp lên **⭐ Premium** để nhận được các đặc quyền sau nếu được bật:
