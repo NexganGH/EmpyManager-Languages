@@ -14,7 +14,7 @@ tempchannel-panel-body: |
   Sử dụng một trong các **nút** bên dưới để **chỉnh sửa kênh của bạn**.
   
 tempchannel-private-button: "Riêng tư"
-tempchannel-public-button: "Công cộng"
+tempchannel-public-button: "Công khai"
 tempchannel-hide-button: "Ẩn"
 tempchannel-show-button: "Hiện"
 tempchannel-edit-button: "Chỉnh sửa kênh"
