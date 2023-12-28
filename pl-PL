@@ -72,7 +72,11 @@ setup-no-perm-body: |
   Ze względu na uprawnienia Discorda, wymagane są uprawnienia **Administratora** dla bota, aby utworzyć kategorię z odpowiednimi uprawnieniami.
   
   Jednakże, możesz postępować zgodnie z poniższymi krokami, jeśli chcesz uniknąć nadawania uprawnień administratora:
-
+ ```
+  • Utwórz kategorię
+  • Dodaj pełne uprawnienia do bota w kategorii
+  • Użyj polecenia ukośnika: /setup-category <kategoria>
+  ```
 setup-no-valid-category-error: Wybierz poprawną kategorię. %channel% nie jest kategorią!
 setup-no-perm-in-category: Upewnij się, że EmpyManager ma pełne uprawnienia w wybranej kategorii!
 
@@ -100,6 +104,7 @@ Napotkałem błąd podczas tworzenia twojego kanału głównego:
 **Upewnij się, że EmpyManager ma wystarczające uprawnienia** (wymaga uprawnień administratora do utworzenia kanału głównego). 
 
 **Dołącz do [tego serwera](https://empymanager.com/support), aby uzyskać wsparcie.**
+
 
 help-title: Komendy EmpyManagera
 help-body: |
@@ -203,7 +208,6 @@ kick-interaction-body: |
   
   ❌ Użytkownik nie został znaleziony lub nie jest połączony? Wpisz `/kick @user`, aby go wyrzucić.
 
-
 # Ban
 ban-interaction-body: |
   ⛔ Wybierz członka, aby zbanować go z tymczasowego kanału. 
@@ -299,6 +303,7 @@ switched-channels-too-fast-error: Hej, zwolnij! Zbyt szybko zmieniasz tymczasowe
 
 no-common-found: Nie znaleziono komendy %command%.
 command-info: Informacje o Komendzie
+
 
 ### Inne komendy
 success: Sukces.
