@@ -62,10 +62,10 @@ bot-added-body: |
   Wszystko, co musisz zrobić, aby zacząć, to `/setup`, aby wejść do przewodnika konfiguracji.
 
   Oto kilka linków, które mogą być przydatne:
-  - Panel EmpyManagera
-  - Serwer Pomocy
-  - Dokumentacja z samouczkami
-  - Jak tworzyć tymczasowe kanały
+  - [Panel EmpyManagera](https://dashboard.empymanager.com/)
+  - [Serwer Pomocy](https://empymanager.com/support)
+  - [Dokumentacja z samouczkami](https://docs.empymanager.com/)
+  - [Jak tworzyć tymczasowe kanały](https://docs.empymanager.com/getting-started/create-temporary-channels)
 
 new-bot-added-title: "🌟 Konfiguracja EmpyManagera"
 new-bot-added-body: |
@@ -156,11 +156,11 @@ Upewnij się, że edytujesz go według własnych upodobań: możesz zmienić jeg
 **Wszystkie tymczasowe kanały utworzone z tego kanału głównego odziedziczą jego limit użytkowników i bitrate.**
 
 🌐 **Panel**
-- Zobacz ustawienia tego kanału.
-- Zobacz ustawienia serwera.
-
+- Zobacz [ustawienia tego kanału](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%).
+- Zobacz [ustawienia serwera](https://dashboard.empymanager.com/guilds/%guildId%).
+  
 ⌨️ **Komendy**
-- Wszystkie komendy.
+- [Wszystkie Komendy](https://docs.empymanager.com/commands).
 
 error-master-creation-body: |
 Napotkałem błąd podczas tworzenia twojego kanału głównego:
@@ -168,7 +168,7 @@ Napotkałem błąd podczas tworzenia twojego kanału głównego:
 
 **Upewnij się, że EmpyManager ma wystarczające uprawnienia** (wymaga uprawnień administratora do utworzenia kanału głównego). 
 
-**Dołącz do tego serwera, aby uzyskać wsparcie.**
+**Dołącz do [tego serwera](https://empymanager.com/support), aby uzyskać wsparcie.**
 
 
 help-title: Komendy EmpyManagera
@@ -352,7 +352,7 @@ error: Błąd
 command-error-body: |
   %error%
   
-  Jeśli potrzebujesz dalszej pomocy, dołącz do oficjalnego serwera wsparcia lub skontaktuj się z administratorem serwera.
+  Jeśli potrzebujesz dodatkowej pomocy, dołącz do oficjalnego [serwera wsparcia](https://empymanager.com/support) lub skontaktuj się z administratorem serwera.
 target-not-found: Cel nie został znaleziony.
 not-enough-permissions-command: Nie masz wystarczających uprawnień, aby wykonać to polecenie tutaj.
 feature-requires-premium: Ta funkcja serwera jest wyłączona. Rozważ ulepszenie swojego gildii; więcej informacji na `/premium`.
@@ -362,8 +362,8 @@ must-be-a-manager: Musisz być menedżerem, aby wykonać to polecenie.
 must-be-a-moderator: Musisz być moderatorem, aby wykonać to polecenie.
 
 command-disabled-here: Nie możesz wykonywać tej komendy tutaj. Skontaktuj się z administratorem serwera.
-specify-valid-masterchannel-id: Proszę podaj prawidłowe id istniejącego kanału głównego. Sprawdź ten film, aby dowiedzieć się, jak uzyskać id kanału.
-invalid-masterchannel-id: Kanał o id %channelId% nie jest kanałem głównym. Sprawdź ten film, aby dowiedzieć się, jak uzyskać id kanału.
+specify-valid-masterchannel-id: Proszę podaj prawidłowe id istniejącego kanału głównego. [Sprawdź ten film](https://www.youtube.com/watch?v=xgjGuA-Xp4g), aby dowiedzieć się, jak uzyskać id kanału.
+invalid-masterchannel-id: Kanał o id %channelId% nie jest kanałem głównym. [Sprawdź ten film](https://www.youtube.com/watch?v=xgjGuA-Xp4g), aby dowiedzieć się, jak uzyskać id kanału.
 masterchannel-disabled-out-of-slots-error: Ten kanał główny został wyłączony, ponieważ przekracza dostępne sloty kanałów głównych na tym serwerze. Proszę użyj innego lub rozważ wsparcie bota za pomocą `/premium`.
 masterchannel-creation-out-of-slots-error: Nie masz więcej dostępnych slotów kanałów głównych. Proszę, usuń jeden z nich lub ulepsz serwer do wersji premium (`/premium`).
 switched-channels-too-fast-error: Hej, zwolnij! Zbyt szybko zmieniasz tymczasowe kanały.
@@ -388,7 +388,7 @@ info-command-body: |
 # Dashboard
 dashboard-command-title: Link do Dashboardu
 dashboard-command-body: "Możesz uzyskać dostęp do dashboardu tego serwera tutaj: %link%"
-dashboard-unauthorised-command-body: "Nie możesz zarządzać tym serwem, ale możesz uzyskać dostęp do Dashboardu EmpyManagera tutaj: %link%"
+dashboard-unauthorised-command-body: "Nie możesz zarządzać tym serwerem, ale możesz uzyskać dostęp do Dashboardu EmpyManagera tutaj: %link%"
 
 
 
@@ -403,7 +403,7 @@ cannot-make-more-permanent-channels: Nie możesz utworzyć więcej stałych kana
 invites-disabled-here: Zaproszenia są wyłączone na tym serwerze ze względów bezpieczeństwa. Poproś administratora serwera o wykonanie `%prefix%settings invites` po więcej informacji.
 enable-invites-title: "Zaproszenia"
 invite-disabled-vote-bot: |
-  Proszę, zagłosuj na bota tutaj aby odblokować zaproszenia do czasu ważności twojego głosu lub subskrybuj plan donatora (`/premium`).
+ Proszę, zagłosuj na bota [tutaj](https://top.gg/bot/719236419230367798/vote), aby odblokować zaproszenia do momentu ważności twojego głosu lub zasubskrybuj plan dla darczyńców (`/premium`).
 enable-invites-body: "Czy chcesz włączyć zaproszenia na tym serwerze?"
 invites-enabled: "Zaproszenia włączone."
 invites-disabled: "Zaproszenia wyłączone."
@@ -422,21 +422,21 @@ language-edited-title: Język zmieniony
 language-edited-body: Język został ustawiony na %language%.
 
 # Premium
-not-a-premium-server: "**nie** jest **serwerem Premium**. Niektóre funkcje, takie jak liczba kanałów głównych, będą ograniczone."
-a-premium-server: "jest **serwerem Premium**."
-a-premium-plus-server: "jest **serwerem Premium Plus**."
-enable-premium-here: "Ponieważ jesteś użytkownikiem premium, możesz włączyć swoje premium na tym gildii za pomocą `%prefix%premium enable`."
-premium-features: "Zobacz wszystkie funkcje premium tutaj."
+not-a-premium-server: "**nie** jest **Serwerem Premium**. Niektóre funkcje, takie jak liczba kanałów głównych, będą ograniczone."
+a-premium-server: "jest **Serwerem Premium**."
+a-premium-plus-server: "jest **Serwerem Premium Plus**."
+enable-premium-here: "Jako użytkownik premium, możesz włączyć swoje premium na tym serwerze za pomocą `%prefix%premium enable`."
+premium-features: "Zobacz wszystkie funkcje premium [tutaj](https://dashboard.empymanager.com/premium)."
 premium-must-be-inside-server: Musisz być na tym serwerze.
 not-premium-provider: Nie jesteś dostawcą premium dla tej gildii ani administratorem.
 no-premium-subscriptions: Na tej gildii nie ma subskrypcji premium.
 premium-info: |
   Ten serwer to %type%
 
-  **Pełna lista funkcji tutaj.**
-  Subskrybuj na Patreonie.
-  Dołącz do oficjalnego serwera Discord po więcej informacji lub jakiekolwiek pytania.
-
+  **Pełna lista funkcji [tutaj](https://dashboard.empymanager.com/premium).**
+  Subskrybuj na [Patreonie](https://patreon.com/nexgan).
+  Dołącz do oficjalnego [serwera Discord](https://empymanager.com/support) po więcej informacji lub pytania.
+  
 # Nowe wiadomości premium
 premium-info-title: "Informacje o Premium"
 premium-info-body: |
