@@ -1,31 +1,31 @@
 flag: 🇵🇱
 
-### Najważniejsze komunikaty
+### Najważniejsze wiadomości
 
-tempchannel-panel-title: "Prywatny Czat %owner%"
+tempchannel-panel-title: "Prywatny czat %owner%"
 tempchannel-panel-body: |
-  Witaj %owner% w swoim prywatnym czacie!
-  Tylko użytkownicy połączeni z Twoim kanałem zobaczą ten czat, a zostanie usunięty, gdy wszyscy opuszczą.
+  Witaj %owner% na swoim prywatnym czacie!
+  Tylko użytkownicy połączeni z twoim kanałem zobaczą ten czat, a zostanie on usunięty, gdy wszyscy go opuszczą.
 
-  Twój kanał to:
+  Twój kanał jest:
   - %private%
   - %hidden%
   
-  Użyj jednego z **przycisków** poniżej, aby **edytować swój kanał**.
+  Użyj jednego z poniższych **przycisków**, aby **edytować swój kanał**.
   
 tempchannel-private-button: "Prywatny"
 tempchannel-public-button: "Publiczny"
 tempchannel-hide-button: "Ukryj"
 tempchannel-show-button: "Pokaż"
-tempchannel-edit-button: "Edytuj Kanał"
+tempchannel-edit-button: "Edytuj kanał"
 tempchannel-kick-button: "Wyrzuć"
 tempchannel-ban-button: "Zbanuj"
 
 tempchannel-generator-title: |
-  📝 Kontroluj Swój Kanał
+  📝 Steruj swoim kanałem
 
 tempchannel-generator-body: |
-  **🖱 Kliknij** poniżej przyciski lub użyj **Polecenia Slash** (`/`) do **📝 kontrolowania** swojego kanału.
+  **🖱 Kliknij** poniższe **przyciski** lub użyj **komend Slash** (`/`), aby **📝 sterować** swoim kanałem.
   
   %privateCommands%
   %hideCommands%
@@ -36,20 +36,20 @@ tempchannel-generator-body: |
 
 tempchannel-generator-private-msg: "🚫 `/private` / 🌐 `/public`\n"
 tempchannel-generator-hide-msg: "👻 `/hide` / 👁️ `/show`\n"
-tempchannel-generator-waiting-msg: "🏠 `/waitingroom` - Zrób swój kanał **🚫 prywatny** i utwórz **🏠 poczekalnię**.\n"
+tempchannel-generator-waiting-msg: "🏠 `/waitingroom` - Ustaw swój kanał jako **🚫 prywatny** i utwórz **🏠 poczekalnię**.\n"
 tempchannel-generator-manage-msg: "✏ `/rename`, `/limit`, `/bitrate`\n"
 tempchannel-generator-move-msg: "👞 `/kick @user` / ⛔ `/ban @user`\n"
 tempchannel-generator-invite-msg: "🔗 `/invite @user` - Wyślij zaproszenie do użytkownika.\n"
 
-edit-channel-modal-title: "Edytuj Swój Kanał"
+edit-channel-modal-title: "Edytuj swój kanał"
 new-name-input: "Nazwa"
 new-name-input-placeholder: "Moja nowa nazwa kanału..."
 new-bitrate-input: "Bitrate"
 new-user-limit-input: "Limit użytkowników"
 
-master-panel-add-title: "⭐ Nowa Funkcja"
+master-panel-add-title: "⭐ Nowa funkcja"
 master-panel-add-body: |
-  Cześć! Przepraszam za kłopot 😀.
+  Cześć! Przepraszam za przeszkadzanie 😀.
   
   Możesz być zainteresowany moją najnowszą funkcją: wpisz `/master-panel <master-channel>` aby stworzyć panel z komendami bota. Może to być przydatne, jeśli chcesz mieć panel bez kanałów tekstowych. 📝
 
@@ -67,76 +67,141 @@ bot-added-body: |
   - [Dokumentacja z samouczkami](https://docs.empymanager.com/)
   - [Jak tworzyć tymczasowe kanały](https://docs.empymanager.com/getting-started/create-temporary-channels)
 
-setup-no-perm-title: "Tworzenie Kanału Głównego"
+new-bot-added-title: "🌟 Konfiguracja EmpyManagera"
+new-bot-added-body: |
+  🌟 Dzięki za dodanie mnie!
+  
+  Wybierz jedną z opcji poniżej: 
+  - ✨ Utwórz **kanał główny**, aby zacząć tworzyć **tymczasowe kanały**
+  - 🏳️ Zmień **język** bota
+  
+  Język ustawiony na **%language%** (*Nie wszystkie wiadomości są przetłumaczone!*)
+
+create-master-channel-button: "Utwórz kanał główny"
+
+setup-menu-title: "✨ Utworzono kanał główny"
+setup-menu-body: |
+  ✨ Utworzyłem dla ciebie **kanał główny** <#%masterId%>! Aby utworzyć **tymczasowy kanał**, wystarczy dołączyć do <#%masterId%>.
+  
+  ⚠ Przeprowadzę cię przez najważniejsze kroki konfiguracji, ale pamiętaj, że znajdziesz **znacznie więcej opcji** dostępnych w **panelu**!
+  
+  ⚙ Kliknij poniżej, aby rozpocząć **podstawową konfigurację**.
+
+edit-master-1-title: "⚙ Edycja **%name%** (%masterId%) [1/2]"
+edit-master-1-body: |
+  **Uprawnienia właściciela kanału**
+  📝 %manageStatus% `Zarządzaj kanałem` (Zmień nazwę, edytuj limit, itp.)
+  👥 %moveStatus% `Przenieś członków` (Banuj, wyrzucaj)
+  🪪 %permissionStatus% `Edytuj uprawnienia`
+  %quickStatus% `Szybkie komendy`:
+  - 🚫 %privateStatus% `Prywatny`
+  - 👻 %hideStatus% `Ukryj`
+  - 🏠 %waitingStatus% `Poczekalnia`
+  
+  🔩 **Synchronizacja uprawnień**: %permSyncing%
+
+**Powiązane role**: Dodaj jedną lub więcej ról, które mają być dodane do użytkowników na tym tymczasowym kanale tutaj (zakładka `Uprawnienia`)
+  
+  **Ostrzeżenie**: znacznie więcej ustawień można znaleźć w panelu
+perm-syncing-master-channel: Synchronizuj uprawnienia z kanałem głównym
+perm-syncing-master-channel-default: (Domyślnie) Synchronizuj uprawnienia z kanałem głównym
+perm-syncing-category: Synchronizuj uprawnienia z kategorią
+
+
+
+edit-master-2-title: "⚙ Edycja **%name%** (%masterId%) [2/2]"
+edit-master-2-body: |
+  📝 **Szablon kanału głosowego**: `%voiceTemplate%`
+  
+  💬 **Utwórz oddzielny kanał tekstowy zamiast korzystać z czatu głosowego**: %separateTextStatus%
+  
+  📜 **Osobisty panel wysyłany do każdego tymczasowego kanału**: %personalPanelStatus%
+  
+  **Ostrzeżenie**: znacznie więcej ustawień można znaleźć w panelu
+  
+edit-master-completed-title: "⚙ Kanał główny skonfigurowany"
+edit-master-completed-body: |
+  ✅ Kanał główny <#%masterId%> został skonfigurowany!
+  
+  🌟 Aby utworzyć **tymczasowy kanał**, wystarczy dołączyć do <#%masterId%>.
+  
+  ⚙ Pamiętaj, że znacznie więcej ustawień znajdziesz w panelu. Aby przywrócić tę konfigurację, użyj komendy `/edit`.
+  
+  💎 Jeśli podoba ci się bot, rozważ subskrypcję Premium, aby uzyskać ekskluzywne funkcje i nieograniczoną liczbę kanałów głównych.
+
+change-voice-template-modal-title: "Edytuj szablon kanału głosowego"
+change-voice-template-text-field-label: "Szablon kanału głosowego"
+
+setup-no-perm-title: "Tworzenie kanału głównego"
 setup-no-perm-body: |
   Ze względu na uprawnienia Discorda, wymagane są uprawnienia **Administratora** dla bota, aby utworzyć kategorię z odpowiednimi uprawnieniami.
   
   Jednakże, możesz postępować zgodnie z poniższymi krokami, jeśli chcesz uniknąć nadawania uprawnień administratora:
   ```
   • Utwórz kategorię
-  • Dodaj pełne uprawnienia do bota w kategorii
-  • Użyj polecenia ukośnika: /setup-category <kategoria>
+  • Daj wszystkie uprawnienia botowi w kategorii
+  • Użyj komendy: /setup-category <category>
   ```
 setup-no-valid-category-error: Wybierz poprawną kategorię. %channel% nie jest kategorią!
 setup-no-perm-in-category: Upewnij się, że EmpyManager ma pełne uprawnienia w wybranej kategorii!
 
-setup-title: "✅ Kanał Główny Utworzony"
+setup-title: "✅ Utworzono kanał główny"
 setup-body: |
-  ✅ Utworzyłem **kanał główny** o id `%id%` dla Ciebie!
+✅ Utworzyłem dla ciebie **kanał główny** o id `%id%`!
 
-  Twoi użytkownicy mogą teraz dołączyć do niego, aby tworzyć swoje własne tymczasowe kanały.
+Twoi użytkownicy mogą teraz dołączyć do niego, aby tworzyć swoje własne tymczasowe kanały.
 
-  Upewnij się, że edytujesz go według własnych upodobań: możesz zmienić jego nazwę, uprawnienia do dołączania, limit użytkowników i bitrate. 
+Upewnij się, że edytujesz go według własnych upodobań: możesz zmienić jego nazwę, uprawnienia do dołączania, limit użytkowników i bitrate. 
 
-  **Wszystkie tymczasowe kanały utworzone z tego kanału głównego odziedziczą jego limit użytkowników i bitrate.**
+**Wszystkie tymczasowe kanały utworzone z tego kanału głównego odziedziczą jego limit użytkowników i bitrate.**
 
-  🌐 **Panel**
-  - Zobacz [ustawienia tego kanału](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%).
-  - Zobacz [ustawienia serwera](https://dashboard.empymanager.com/guilds/%guildId%).
+🌐 **Panel**
+- Zobacz [ustawienia tego kanału](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%).
+- Zobacz [ustawienia serwera](https://dashboard.empymanager.com/guilds/%guildId%).
   
-  ⌨️ **Komendy**
-  - [Wszystkie Komendy](https://docs.empymanager.com/commands).
+⌨️ **Komendy**
+- [Wszystkie Komendy](https://docs.empymanager.com/commands).
 
 error-master-creation-body: |
-Napotkałem błąd podczas tworzenia twojego kanału głównego: |
-  ```%error%```
-  
-  **Upewnij się, że EmpyManager ma wystarczające uprawnienia** (wymaga uprawnień administratora do utworzenia kanału głównego). 
-  
-  **Dołącz do [tego serwera](https://empymanager.com/support), aby uzyskać wsparcie.**
+Napotkałem błąd podczas tworzenia twojego kanału głównego:
+```%error%```
+
+**Upewnij się, że EmpyManager ma wystarczające uprawnienia** (wymaga uprawnień administratora do utworzenia kanału głównego). 
+
+**Dołącz do [tego serwera](https://empymanager.com/support), aby uzyskać wsparcie.**
 
 
 help-title: Komendy EmpyManagera
 help-body: |
-  🌟 `/premium` - Dostęp do komend związanych z funkcją Premium.
-  
-  -
-help-control-subtitle: 🛠️   Kontroluj swój kanał
-help-control-body: |
-  -
-  
-  🚫 `/private` / 🌐 `/public`
-  
-  👻 `/hide` / 👁 `/show`
-  
-  🏠 `/waitingroom`
-  
-  🚩 `/claim` - Zostań właścicielem kanału, w którym aktualnie się znajdujesz (obecny właściciel musi być rozłączony).
-  
-  👞 `/kick @user` / ⛔ `/ban @user` - Zbanuj @user z tymczasowego kanału
-  
-  🔗 `/invite @user` - Zaproś użytkownika do swojego kanału (otrzymają prywatną wiadomość).
+🌟 `/premium` - Dostęp do komend związanych z Premium.
 
-  Inne komendy: `/rename`, `/limit`, `/bitrate`.
-  
-  **Jeśli nie widzisz komend slash, poinformuj administratora o [aktualizacji uprawnień bota](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+-
+help-control-subtitle: 🛠️   Steruj swoim kanałem
+help-control-body: |
+-
+
+🚫 `/private` / 🌐 `/public`
+
+👻 `/hide` / 👁 `/show`
+
+🏠 `/waitingroom`
+
+🚩 `/claim` - Zostań właścicielem kanału, w którym aktualnie się znajdujesz (obecny właściciel musi być rozłączony).
+
+👞 `/kick @user` / ⛔ `/ban @user` - Zbanuj @user z tymczasowego kanału
+
+🔗 `/invite @user` - Zaproś użytkownika do swojego kanału (otrzymają prywatną wiadomość).
+
+Inne komendy: `/rename`, `/limit`, `/bitrate`.
+
+**Jeśli nie widzisz komend slash, powiedz adminowi, aby zaktualizował uprawnienia bota**
 
 help-settings-subtitle: ⚙️   Ustawienia administratora
 help-settings-body: |
-  - Widoczne tylko dla administratorów -
+  - Tylko administratorzy mogą to zobaczyć -
   📒 `/setup` - Utwórz nowy kanał główny i skonfiguruj go.
 help-settings-body-2: |
-  - Widoczne tylko dla administratorów -
+  - Tylko administratorzy mogą to zobaczyć -
   📒 `/setup` - Utwórz nowy kanał główny i skonfiguruj go za pomocą przewodnika.
   
   🖥 `v/dashboard` - Wejdź do Panelu.
@@ -149,10 +214,11 @@ help-settings-body-2: |
   
   🔧 `v/settings` - Pokaż wszystkie zaawansowane ustawienia
 
-invite-button-label: Zaproszenie na Twój serwer
+invite-button-label: Zaproś na swój serwer
 support-button-label: Uzyskaj wsparcie i sugeruj funkcje
 dashboard-button-label: Panel
-vote-button-label: Oddaj głos na bota
+vote-button-label: Głosuj na bota
+docs-button-label: Dokumentacja
 
 ### Komendy
 
@@ -244,7 +310,7 @@ channel-made-private-with-permit-title: "🚫 Kanał Prywatny"
 channel-made-private-with-permit-body: |
   🚫 Ten kanał stał się prywatny.
   
-  👥 Wybierz poniżej, komu chcesz dać dostęp.
+  👥 Wybierz poniżej, komu chcesz udzielić dostępu.
 
 # Publiczny
 channel-made-public-title: "🌐 Kanał Publiczny"
@@ -252,47 +318,48 @@ channel-made-public-body: "🌐 Ten kanał stał się publiczny."
 
 # Ukryty
 channel-hidden-title: "👻 Kanał Ukryty"
-channel-hidden-body: "👻 Ten kanał stał się ukryty."
+channel-hidden-body: "👻 Ten kanał został ukryty."
 
 channel-hidden-with-permit-title: "👻 Kanał Ukryty"
 channel-hidden-with-permit-body: |
   👻 Ten kanał stał się prywatny.
   
-  👥 Wybierz poniżej, komu chcesz dać dostęp.
+  👥 Wybierz poniżej, komu chcesz udzielić dostępu.
 
 # Widoczny
 channel-made-visible-title: "👁 Kanał Widoczny"
 channel-made-visible-body: "👁 Ten kanał stał się widoczny."
 
-# Pokój oczekiwania
-waiting-room-already-enabled: Pokój oczekiwania jest już włączony.
-waiting-room-already-disabled: Pokój oczekiwania jest już wyłączony.
+# Pokój oczekujący
+waiting-room-already-enabled: Poczekalnia jest już włączona.
+waiting-room-already-disabled: Poczekalnia jest już wyłączona.
 waiting-room-default-name: "⬇️ Dołącz do %owner%"
 
-waiting-room-enabled-title: "🏠 Pokój Oczekiwania Włączony"
-waiting-room-enabled-body: "Ten kanał ma teraz pokój oczekiwania. Twój kanał został ustawiony na 🚫 **Prywatny**, a inni użytkownicy będą musieli dołączyć do twojego 🏠 **Pokoju Oczekiwania** i uzyskać zatwierdzenie od ciebie, zanim wejdą."
+waiting-room-enabled-title: "🏠 Poczekalnia włączona"
+waiting-room-enabled-body: "Ten kanał ma teraz poczekalnię. Twój kanał został ustawiony na 🚫 **Prywatny**, a inni użytkownicy będą musieli dołączyć do twojej 🏠 **Poczekalni** i uzyskać twoją zgodę przed wejściem."
 
-waiting-room-disabled-title: "🏠 Pokój Oczekiwania Wyłączony"
-waiting-room-disabled-body: "🏠 **Pokój Oczekiwania** został wyłączony, a kanał stał się 🌐 **Publiczny**."
+waiting-room-disabled-title: "🏠 Poczekalnia wyłączona"
+waiting-room-disabled-body: "🏠 **Poczekalnia** została wyłączona, a kanał stał się 🌐 **Publiczny**."
 
-waiting-room-approve-body: Zatwierdziłeś/aś %user% w swoim pokoju.
+waiting-room-approve-body: Zatwierdziłeś %user% w swoim pokoju.
 
-# Uprawnij użytkownika
-allow-user: "☑ Uprawnij użytkownika..."
+# Zgoda użytkownika
+allow-user: "☑ Zgoda użytkownika..."
 
 ### Ogólne błędy
+
 error: Błąd
 command-error-body: |
   %error%
   
   Jeśli potrzebujesz dodatkowej pomocy, dołącz do oficjalnego [serwera wsparcia](https://empymanager.com/support) lub skontaktuj się z administratorem serwera.
-target-not-found: Nie znaleziono celu.
-not-enough-permissions-command: Nie masz wystarczających uprawnień do wykonania tej komendy tutaj.
-feature-requires-premium: Funkcja tego serwera jest wyłączona. Rozważ uaktualnienie swojej gildii; więcej informacji na temat `/premium`.
-command-requires-channel: Musisz być w tymczasowym kanale, aby użyć tej komendy.
+target-not-found: Cel nie został znaleziony.
+not-enough-permissions-command: Nie masz wystarczających uprawnień, aby wykonać to polecenie tutaj.
+feature-requires-premium: Ta funkcja serwera jest wyłączona. Rozważ ulepszenie swojego gildii; więcej informacji na `/premium`.
+command-requires-channel: Musisz być na tymczasowym kanale, aby użyć tego polecenia.
 action-requires-channel-owner: Musisz być właścicielem kanału użytkownika, aby go edytować.
-must-be-a-manager: Musisz być menadżerem, aby wykonać tę komendę.
-must-be-a-moderator: Musisz być moderatorem, aby wykonać tę komendę.
+must-be-a-manager: Musisz być menedżerem, aby wykonać to polecenie.
+must-be-a-moderator: Musisz być moderatorem, aby wykonać to polecenie.
 
 command-disabled-here: Nie możesz wykonywać tej komendy tutaj. Skontaktuj się z administratorem serwera.
 specify-valid-masterchannel-id: Proszę podaj prawidłowe id istniejącego kanału głównego. [Sprawdź ten film](https://www.youtube.com/watch?v=xgjGuA-Xp4g), aby dowiedzieć się, jak uzyskać id kanału.
@@ -329,29 +396,29 @@ dashboard-unauthorised-command-body: "Nie możesz zarządzać tym serwerem, ale 
 permanent-channel-success-title: Stały
 permanent-channel-success-body: Ten kanał stał się stały i nie zostanie usunięty.
 temporary-channel-success-title: "⏲️ Tymczasowy"
-temporary-channel-success-body: Ten kanał jest teraz **⏲️ tymczasowy** i **zostanie usunięty** po opróżnieniu.
-cannot-make-more-permanent-channels: Nie możesz tworzyć więcej stałych kanałów, używasz %count%/%max% dostępnych dla swojego serwera.
+temporary-channel-success-body: Ten kanał jest teraz **⏲️ Tymczasowy** i **zostanie usunięty** po opróżnieniu.
+cannot-make-more-permanent-channels: Nie możesz utworzyć więcej stałych kanałów, używasz %count%/%max% dostępnych dla twojego serwera.
 
 # Zaproszenia
-invites-disabled-here: Zaproszenia są wyłączone na tym serwerze ze względów bezpieczeństwa. Poproś administratora serwera o wykonanie `%prefix%settings invites` dla dodatkowych informacji.
+invites-disabled-here: Zaproszenia są wyłączone na tym serwerze ze względów bezpieczeństwa. Poproś administratora serwera o wykonanie `%prefix%settings invites` po więcej informacji.
 enable-invites-title: "Zaproszenia"
 invite-disabled-vote-bot: |
-  Proszę, zagłosuj na bota [tutaj](https://top.gg/bot/719236419230367798/vote), aby odblokować zaproszenia do momentu ważności twojego głosu lub zasubskrybuj plan dla darczyńców (`/premium`).
+ Proszę, zagłosuj na bota [tutaj](https://top.gg/bot/719236419230367798/vote), aby odblokować zaproszenia do momentu ważności twojego głosu lub zasubskrybuj plan dla darczyńców (`/premium`).
 enable-invites-body: "Czy chcesz włączyć zaproszenia na tym serwerze?"
 invites-enabled: "Zaproszenia włączone."
 invites-disabled: "Zaproszenia wyłączone."
 
-assign-linked-roles-forbidden-error: Brak uprawnień do przypisywania/usuwania powiązanych ról do użytkownika. Upewnij się, że rola EmpyManagera znajduje się powyżej przypisanych ról.
-assign-linked-roles-generic-error: "Nie udało się przypisać/odblokować ról powiązanych do użytkownika:"
+assign-linked-roles-forbidden-error: Brakuje uprawnień do przypisania/usunięcia powiązanych ról do użytkownika. Upewnij się, że rola EmpyManagera jest powyżej przypisanych ról.
+assign-linked-roles-generic-error: "Nie można przypisać/usunąć powiązanych ról do użytkownika:"
 
 # Język
-show-current-language-title: Obecny język
+show-current-language-title: Aktualny język
 show-current-language-body: |
-  Obecny język to %language%
+  Aktualny język to %language%
   
-  Zmienić?
+  Zmienić go?
 
-language-edited-title: Zmieniony język
+language-edited-title: Język zmieniony
 language-edited-body: Język został ustawiony na %language%.
 
 # Premium
@@ -361,19 +428,19 @@ a-premium-plus-server: "jest **Serwerem Premium Plus**."
 enable-premium-here: "Jako użytkownik premium, możesz włączyć swoje premium na tym serwerze za pomocą `%prefix%premium enable`."
 premium-features: "Zobacz wszystkie funkcje premium [tutaj](https://dashboard.empymanager.com/premium)."
 premium-must-be-inside-server: Musisz być na tym serwerze.
-not-premium-provider: Nie jesteś dostawcą premium tego serwera, ani administratorem.
-no-premium-subscriptions: Brak subskrypcji premium na tym serwerze.
+not-premium-provider: Nie jesteś dostawcą premium dla tej gildii ani administratorem.
+no-premium-subscriptions: Na tej gildii nie ma subskrypcji premium.
 premium-info: |
   Ten serwer to %type%
 
   **Pełna lista funkcji [tutaj](https://dashboard.empymanager.com/premium).**
   Subskrybuj na [Patreonie](https://patreon.com/nexgan).
   Dołącz do oficjalnego [serwera Discord](https://empymanager.com/support) po więcej informacji lub pytania.
-
-# Nowe komunikaty premium
-premium-info-title: "Informacje Premium"
+  
+# Nowe wiadomości premium
+premium-info-title: "Informacje o Premium"
 premium-info-body: |
-  Twój rodzaj planu: **%userType%**
+  Twój typ planu: **%userType%**
   
   Plan włączony na tym serwerze: **%serverType%**
   
@@ -389,7 +456,7 @@ server-premium-disabled-user-not-premium: |
 server-premium-disabled-out-of-slots: |
   %user% jest dostawcą premium tego serwera, ale ten serwer nie ma planu premium.
   
-  Wynika to z faktu, że %user% wciąż jest użytkownikiem premium, ale jego plan jest już włączony w %enabledServers% z dostępnych %maxServers% serwerów dla jego planu %userType% .
+  Wynika to z faktu, że %user% jest nadal użytkownikiem premium, ale jego plan jest już włączony w %enabledServers% z dostępnych %maxServers% serwerów dla jego planu %userType% .
 
 enable-server-premium-user: |
   Jako użytkownik premium, możesz wykonać `/premium enable`, aby włączyć swój plan na tym serwerze!
@@ -399,8 +466,8 @@ premium-perks: |
   • Więcej **kanałów głównych** (do nieograniczonej liczby)
   • Brak wymaganych głosowań dla komend
   • Więcej stałych kanałów
-  • Więcej ról powiązanych
-  • Więcej paneli samoopisujących się
+  • Więcej powiązanych ról
+  • Więcej self-role panels
   • Wszystkie odblokowane ustawienia, takie jak wybór kategorii, logowanie i wiele więcej
   
   ⭐ Więcej informacji [tutaj](%url%)!
@@ -409,21 +476,21 @@ disable-premium-no-permission-in-server-error: |
   Aby wyłączyć premium na tym serwerze, musisz być administratorem lub dostawcą premium.
 disable-premium-no-permission-no-server-error: |
   Aby wyłączyć premium w wybranym serwerze, musisz być jego dostawcą premium lub wykonać tę komendę tam jako administrator.
-premium-disabled-body: "Premium pomyślnie wyłączone."
-premium-provider-for-title: "Twoje Serwery Premium"
+premium-disabled-body: "Premium zostało pomyślnie wyłączone."
+premium-provider-for-title: "Twoje serwery Premium"
 premium-provider-for-body: |
-  Serwery, których jesteś dostawcą premium:
+  Serwery, dla których jesteś dostawcą premium:
   %servers%
   
-  Wpisz komendę `/premium disable <server-id>`, aby przestać być dostawcą premium na jednym z serwerów na liście.
+  Wpisz komendę slash `/premium disable <server-id>` aby przestać być dostawcą premium dla serwera z listy.
   
   Twój plan: %type%
   
-  Uwaga: jeśli zdegradować swój plan do planu z mniejszą liczbą dostępnych miejsc, tylko pierwsze serwery otrzymają korzyści! **Podświetlone** serwery to te, gdzie premium jest obecnie włączone
+  Uwaga: jeśli zdegradujesz swój plan do planu z mniejszą liczbą dostępnych slotów, tylko pierwsze serwery otrzymają korzyści! **Podświetlone** serwery to te, w których obecnie włączono premium
 no-premium-title: Brak premium
 no-premium-body: Nie masz żadnego planu premium! Sprawdź plany premium na https://dashboard.empymanager.com/premium.
-premium-already-enabled-error: Ten serwer ma już włączone premium! Proszę poprosić administratora o wyłączenie go, jeśli chcesz włączyć swój plan (`/premium disable`).
-premium-max-number-of-servers-reached-error: Osiągnąłeś już maksymalną liczbę aktywowanych gildii dla swojego planu.
+premium-already-enabled-error: Ten serwer już ma włączone premium! Poproś administratora, aby go wyłączył, jeśli chcesz włączyć swój plan (`/premium disable`).
+premium-max-number-of-servers-reached-error: Osiągnąłeś już maksymalną liczbę serwerów, dla których możesz włączyć premium.
 
 premium-enabled-here-body: |
   Premium typu %type% zostało włączone na tym serwerze!
