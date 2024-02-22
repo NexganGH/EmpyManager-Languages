@@ -72,7 +72,7 @@ setup-no-perm-body: |
   Ze względu na uprawnienia Discorda, wymagane są uprawnienia **Administratora** dla bota, aby utworzyć kategorię z odpowiednimi uprawnieniami.
   
   Jednakże, możesz postępować zgodnie z poniższymi krokami, jeśli chcesz uniknąć nadawania uprawnień administratora:
- ```
+  ```
   • Utwórz kategorię
   • Dodaj pełne uprawnienia do bota w kategorii
   • Użyj polecenia ukośnika: /setup-category <kategoria>
@@ -82,28 +82,28 @@ setup-no-perm-in-category: Upewnij się, że EmpyManager ma pełne uprawnienia w
 
 setup-title: "✅ Kanał Główny Utworzony"
 setup-body: |
-✅ Utworzyłem **kanał główny** o id `%id%` dla Ciebie!
+  ✅ Utworzyłem **kanał główny** o id `%id%` dla Ciebie!
 
-Twoi użytkownicy mogą teraz dołączyć do niego, aby tworzyć swoje własne tymczasowe kanały.
+  Twoi użytkownicy mogą teraz dołączyć do niego, aby tworzyć swoje własne tymczasowe kanały.
 
-Upewnij się, że edytujesz go według własnych upodobań: możesz zmienić jego nazwę, uprawnienia do dołączania, limit użytkowników i bitrate. 
+  Upewnij się, że edytujesz go według własnych upodobań: możesz zmienić jego nazwę, uprawnienia do dołączania, limit użytkowników i bitrate. 
 
-**Wszystkie tymczasowe kanały utworzone z tego kanału głównego odziedziczą jego limit użytkowników i bitrate.**
+  **Wszystkie tymczasowe kanały utworzone z tego kanału głównego odziedziczą jego limit użytkowników i bitrate.**
 
-🌐 **Panel**
-- Zobacz [ustawienia tego kanału](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%).
-- Zobacz [ustawienia serwera](https://dashboard.empymanager.com/guilds/%guildId%).
-
-⌨️ **Komendy**
-- [Wszystkie Komendy](https://docs.empymanager.com/commands).
+  🌐 **Panel**
+  - Zobacz [ustawienia tego kanału](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%).
+  - Zobacz [ustawienia serwera](https://dashboard.empymanager.com/guilds/%guildId%).
+  
+  ⌨️ **Komendy**
+  - [Wszystkie Komendy](https://docs.empymanager.com/commands).
 
 error-master-creation-body: |
-Napotkałem błąd podczas tworzenia twojego kanału głównego:
-```%error%```
-
-**Upewnij się, że EmpyManager ma wystarczające uprawnienia** (wymaga uprawnień administratora do utworzenia kanału głównego). 
-
-**Dołącz do [tego serwera](https://empymanager.com/support), aby uzyskać wsparcie.**
+Napotkałem błąd podczas tworzenia twojego kanału głównego: |
+  ```%error%```
+  
+  **Upewnij się, że EmpyManager ma wystarczające uprawnienia** (wymaga uprawnień administratora do utworzenia kanału głównego). 
+  
+  **Dołącz do [tego serwera](https://empymanager.com/support), aby uzyskać wsparcie.**
 
 
 help-title: Komendy EmpyManagera
