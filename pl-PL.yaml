@@ -323,7 +323,7 @@ channel-hidden-body: "👻 Ten kanał został ukryty."
 
 channel-hidden-with-permit-title: "👻 Kanał Ukryty"
 channel-hidden-with-permit-body: |
-  👻 Ten kanał stał się prywatny.
+  👻 Ten kanał stał się ukryty.
   
   👥 Wybierz poniżej, komu chcesz udzielić dostępu.
 
