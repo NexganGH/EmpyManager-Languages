@@ -99,8 +99,8 @@ edit-master-1-body: |
   - 🏠 %waitingStatus% `Poczekalnia`
   
   🔩 **Synchronizacja uprawnień**: %permSyncing%
-
-**Powiązane role**: Dodaj jedną lub więcej ról, które mają być dodane do użytkowników na tym tymczasowym kanale tutaj (zakładka `Uprawnienia`)
+  
+  **Powiązane role**: Dodaj jedną lub więcej ról, które mają być dodane do użytkowników na tym tymczasowym kanale tutaj (zakładka `Uprawnienia`)
   
   **Ostrzeżenie**: znacznie więcej ustawień można znaleźć w panelu
 perm-syncing-master-channel: Synchronizuj uprawnienia z kanałem głównym
@@ -147,54 +147,55 @@ setup-no-perm-in-category: Upewnij się, że EmpyManager ma pełne uprawnienia w
 
 setup-title: "✅ Utworzono kanał główny"
 setup-body: |
-✅ Utworzyłem dla ciebie **kanał główny** o id `%id%`!
-
-Twoi użytkownicy mogą teraz dołączyć do niego, aby tworzyć swoje własne tymczasowe kanały.
-
-Upewnij się, że edytujesz go według własnych upodobań: możesz zmienić jego nazwę, uprawnienia do dołączania, limit użytkowników i bitrate. 
-
-**Wszystkie tymczasowe kanały utworzone z tego kanału głównego odziedziczą jego limit użytkowników i bitrate.**
-
-🌐 **Panel**
-- Zobacz [ustawienia tego kanału](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%).
-- Zobacz [ustawienia serwera](https://dashboard.empymanager.com/guilds/%guildId%).
+  ✅ Utworzyłem dla ciebie **kanał główny** o id `%id%`!
   
-⌨️ **Komendy**
-- [Wszystkie Komendy](https://docs.empymanager.com/commands).
+  Twoi użytkownicy mogą teraz dołączyć do niego, aby tworzyć swoje własne tymczasowe kanały.
+  
+  Upewnij się, że edytujesz go według własnych upodobań: możesz zmienić jego nazwę, uprawnienia do dołączania, limit użytkowników i bitrate. 
+  
+  **Wszystkie tymczasowe kanały utworzone z tego kanału głównego odziedziczą jego limit użytkowników i bitrate.**
+
+  🌐 **Panel**
+  - Zobacz [ustawienia tego kanału](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%).
+  - Zobacz [ustawienia serwera](https://dashboard.empymanager.com/guilds/%guildId%).
+    
+  ⌨️ **Komendy**
+  - [Wszystkie Komendy](https://docs.empymanager.com/commands).
 
 error-master-creation-body: |
-Napotkałem błąd podczas tworzenia twojego kanału głównego:
-```%error%```
-
-**Upewnij się, że EmpyManager ma wystarczające uprawnienia** (wymaga uprawnień administratora do utworzenia kanału głównego). 
-
-**Dołącz do [tego serwera](https://empymanager.com/support), aby uzyskać wsparcie.**
+Napotkałem błąd podczas tworzenia twojego kanału głównego: |
+  ```%error%```
+  
+  **Upewnij się, że EmpyManager ma wystarczające uprawnienia** (wymaga uprawnień administratora do utworzenia kanału głównego). 
+  
+  **Dołącz do [tego serwera](https://empymanager.com/support), aby uzyskać wsparcie.**
 
 
 help-title: Komendy EmpyManagera
 help-body: |
-🌟 `/premium` - Dostęp do komend związanych z Premium.
+  🌟 `/premium` - Dostęp do komend związanych z Premium.
 
--
+  -
 help-control-subtitle: 🛠️   Steruj swoim kanałem
 help-control-body: |
--
+  -
+  
+  🚫 `/private` / 🌐 `/public`
+  
+  👻 `/hide` / 👁 `/show`
+  
+  🏠 `/waitingroom`
+  
+  🚩 `/claim` - Zostań właścicielem kanału, w którym aktualnie się znajdujesz (obecny właściciel musi być rozłączony).
+  
+  👞 `/kick @user` / ⛔ `/ban @user` - Zbanuj @user z tymczasowego kanału
+  
+  🔗 `/invite @user` - Zaproś użytkownika do swojego kanału (otrzymają prywatną wiadomość).
 
-🚫 `/private` / 🌐 `/public`
+  Inne komendy: 
+  `/rename`, `/limit`, `/bitrate`.
 
-👻 `/hide` / 👁 `/show`
-
-🏠 `/waitingroom`
-
-🚩 `/claim` - Zostań właścicielem kanału, w którym aktualnie się znajdujesz (obecny właściciel musi być rozłączony).
-
-👞 `/kick @user` / ⛔ `/ban @user` - Zbanuj @user z tymczasowego kanału
-
-🔗 `/invite @user` - Zaproś użytkownika do swojego kanału (otrzymają prywatną wiadomość).
-
-Inne komendy: `/rename`, `/limit`, `/bitrate`.
-
-**Jeśli nie widzisz komend slash, powiedz adminowi, aby zaktualizował uprawnienia bota**
+  **Jeśli nie widzisz komend slash, powiedz adminowi, aby zaktualizował uprawnienia bota**
 
 help-settings-subtitle: ⚙️   Ustawienia administratora
 help-settings-body: |
