@@ -1,0 +1,433 @@
+flag: 🇻🇳
+
+### Most important messages
+
+tempchannel-panel-title: "%owner%'s Trò chuyện riêng tư"
+tempchannel-panel-body: |
+  Chào mừng %owner% đến với cuộc trò chuyện riêng tư của bạn!
+  Chỉ những người dùng được kết nối với kênh của bạn mới thấy cuộc trò chuyện này và nó sẽ bị xóa sau khi mọi người rời đi.
+
+  Kênh của bạn là:
+  - %private%
+  - %hidden%
+  
+  Sử dụng một trong các **nút** bên dưới để **chỉnh sửa kênh của bạn**.
+  
+tempchannel-private-button: "Riêng tư"
+tempchannel-public-button: "Công khai"
+tempchannel-hide-button: "Ẩn"
+tempchannel-show-button: "Hiện"
+tempchannel-edit-button: "Chỉnh sửa kênh"
+tempchannel-kick-button: "Đá"
+tempchannel-ban-button: "Cấm"
+
+tempchannel-generator-title: |
+  📝 Điều khiển kênh của bạn
+
+tempchannel-generator-body: |
+  **🖱 Nhấn vào** các **nút** bên dưới hoặc sử dụng **Lệnh gạch chéo** (`/`) để **📝 điều khiển** kênh của bạn.
+  
+  %privateCommands%
+  %hideCommands%
+  %waitingCommands%
+  %manageCommands%
+  %moveCommands%
+  %inviteCommand%
+
+tempchannel-generator-private-msg: "🚫 `/private` / 🌐 `/public`\n"
+tempchannel-generator-hide-msg: "👻 `/hide` / 👁️ `/show`\n"
+tempchannel-generator-waiting-msg: "🏠 `/waitingroom` - Đặt kênh của bạn **🚫 riêng tư** và tạo **🏠 phòng chờ**.\n"
+tempchannel-generator-manage-msg: "✏ `/rename`, `/limit`, `/bitrate`\n"
+tempchannel-generator-move-msg: "👞 `/kick @user` / ⛔ `/ban @user`\n"
+tempchannel-generator-invite-msg: "🔗 `/invite @user` - Gửi lời mời tới người dùng.\n"
+
+edit-channel-modal-title: "Chỉnh sửa kênh của bạn"
+new-name-input: "Tên"
+new-name-input-placeholder: "Tên kênh mới của tôi..."
+new-bitrate-input: "Bitrate"
+new-user-limit-input: "Giới hạn người"
+
+master-panel-add-title: "⭐ Tính năng mới"
+master-panel-add-body: |
+  Xin chào! Xin lỗi đã làm phiền bạn 😀.
+  
+  Bạn có thể quan tâm đến tính năng mới nhất của tôi: Nhập lệnh `/master-panel <master-channel>` để tạo bảng điều khiển với các lệnh của bot. Nó có thể hữu ích nếu bạn muốn có một bảng điều khiển không có kênh văn bản. 📝
+
+bot-added-title: Cảm ơn đã thêm tôi!
+bot-added-body: |
+  Xin chào, cảm ơn vì đã thêm tôi vào máy chủ của bạn!
+  
+  Nhập `/help` để xem tất cả các lệnh của tôi.
+  
+  Tất cả những gì bạn phải làm để bắt đầu là `/setup` để vào thiết lập được hướng dẫn.
+
+  Đây là một số liên kết có thể hữu ích:
+  - [Bảng điều khiển của EmpyManager](https://dashboard.empymanager.com/)
+  - [Máy chủ hỗ trợ](https://empymanager.com/support)
+  - [Tài liệu hướng dẫn](https://docs.empymanager.com/)
+  - [Cách tạo kênh tạm thời](https://docs.empymanager.com/getting-started/create-temporary-channels)
+
+setup-no-perm-title: "Tạo kênh chính"
+setup-no-perm-body: |
+  Do quyền của Discord, bot cần có quyền **Quản trị viên** để tạo danh mục có quyền chính xác.
+  
+  Tuy nhiên, bạn có thể làm theo các bước bên dưới nếu muốn tránh cấp quyền quản trị viên:
+  ```
+  • Tạo một danh mục
+  • Thêm toàn quyền cho bot trong danh mục
+  • Sử dụng lệnh gạch chéo: /setup-category <category>
+  ```
+setup-no-valid-category-error: Vui lòng chọn một danh mục hợp lệ. %channel% không phải là một danh mục!
+setup-no-perm-in-category: Đảm bảo EmpyManager có toàn quyền trong danh mục đã chọn!
+
+setup-title: "✅ Kênh chính đã được tạo"
+setup-body: |
+  ✅ Tôi đã tạo **kênh chính** có id `%id%` cho bạn!
+
+  Người dùng của bạn hiện có thể tham gia để tạo kênh tạm thời của riêng họ.
+  
+  Đảm bảo chỉnh sửa nó theo ý muốn: bạn có thể thay đổi tên, quyền tham gia, giới hạn người và bitrate.
+  
+  **Tất cả các kênh tạm thời được tạo từ kênh chính này sẽ kế thừa giới hạn người và bitrate.**
+  
+  🌐 **Bảng điều khiển**
+  - Xem [cài đặt của kênh này](https://dashboard.empymanager.com/guilds/%guildId%/masters/%id%).
+  - Xem [cài đặt của máy chủ](https://dashboard.empymanager.com/guilds/%guildId%).
+  
+  ⌨️ **Lệnh**
+  - [Tất Cả Lệnh](https://docs.empymanager.com/commands).
+  
+error-master-creation-body: |
+  Tôi đã gặp lỗi khi tạo kênh chính của bạn:
+  ```%error%```
+  
+  **Vui lòng đảm bảo EmpyManager có đủ quyền** (cần có quyền quản trị viên để tạo kênh chính).
+  
+  **Tham gia [máy chủ này](https://empymanager.com/support) để nhận hỗ trợ.**
+
+  
+help-title: EmpyManager Lệnh
+help-body: |
+  🌟 `/premium` - Truy cập các lệnh liên quan đến Premium.
+  
+  -
+help-control-subtitle: 🛠️   Điều khiển kênh của bạn
+help-control-body: |
+  -
+  
+  🚫 `/private` / 🌐 `/public`
+  
+  👻 `/hide` / 👁 `/show`
+  
+  🏠 `/waitingroom`
+  
+  🚩 `/claim` - Trở thành chủ sở hữu của kênh mà bạn hiện đang tham gia (chủ sở hữu hiện tại phải bị ngắt kết nối).
+  
+  👞 `/kick @user` / ⛔ `/ban @user` - Cấm @user khỏi kênh tạm thời.
+  
+  🔗 `/invite @user` - Mời người dùng vào kênh của bạn (họ sẽ nhận được tin nhắn trực tiếp).
+
+  Các lệnh khác: `/rename`, `/limit`, `/bitrate`.
+  
+  **Nếu bạn không thấy các lệnh gạch chéo, hãy yêu cầu quản trị viên [cập nhật quyền của bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+
+help-settings-subtitle: ⚙️   Cài đặt quản trị viên
+help-settings-body: |
+  - Chỉ quản trị viên mới có thể nhìn thấy điều này -
+  📒 `/setup` - Tạo một kênh chính mới và thiết lập nó.
+help-settings-body-2: |
+  - Chỉ quản trị viên mới có thể nhìn thấy điều này -
+  📒 `/setup` - Tạo một kênh chính mới và thiết lập nó.
+  
+  🖥 `v/dashboard` - Truy cập Bảng điều khiển.
+  
+  📜 `v/masterlist` - Danh sách các kênh chính.
+  
+  ❌ `v/resetmasters` - Biến tất cả các kênh chính thành các kênh bình thường.
+  
+  ♻️ `v/refresh` - Làm mới tất cả cài đặt từ cơ sở dữ liệu trong trường hợp nó không hoạt động bình thường.
+  
+  🔧 `v/settings` - Hiển thị tất cả cài đặt nâng cao
+
+invite-button-label: Mời vào máy chủ của bạn
+support-button-label: Nhận hỗ trợ và đề xuất tính năng
+dashboard-button-label: Bảng điều khiển
+vote-button-label: Vote Bot
+
+### Commands
+
+command-was-disabled-here: Lệnh này đã bị vô hiệu hóa ở đây.
+
+ # Rename
+rename-command-success-title: Tên thay đổi
+rename-command-success-body: Tên kênh đã đổi thành %name%.
+rename-interaction-title: "🏷 Đổi tên kênh của bạn"
+rename-interaction-body: "Nhập tên kênh mới vào đây để 🏷 **đổi tên** kênh của bạn."
+
+ # Bitrate
+change-bitrate-interaction-title: "📣 Thay đổi bitrate"
+change-bitrate-interaction-body: "Chọn giá trị 📣 **bitrate** mới."
+
+# Region
+change-region-interaction-title: "🏳️ Thay đổi khu vực"
+change-region-interaction-body: "Hãy chọn 🏳️ **khu vực** mới cho kênh của bạn."
+
+change-region-success-body: "🏳️ **Vùng** được đặt thành `%region%`"
+
+ # Claim
+claim-command-success-body: Xong!
+claim-command-success-body-author: "Kênh được %author% xác nhận thành công."
+claim-channel-user-left-title: "🚩 Nhận quyền quản lý kênh này"
+claim-channel-user-left-body: Người sáng tạo đã rời khỏi kênh. Nhấn vào bên dưới để 🚩 **xác nhận** nó.
+claim-button-label: Nhận quyền
+
+ # Limit
+limit-command-success-title: "👥 Giới hạn người đã được thay đổi"
+limit-command-success-body: "👥 Giới hạn người được đặt thành `%limit%`"
+limit-command-unexpected-limit: Giá trị giới hạn không hợp lệ!
+change-limit-interaction-title: "👥 Thay đổi giới hạn người"
+change-limit-interaction-body: |
+  Chọn **👥 giới hạn người** bạn muốn bằng cách nhấn vào các nút bên dưới.
+  
+  Khi bạn đã chọn xong, hãy nhấn vào **✅ Save**.
+
+  Giới hạn hiện tại: **%limit%**.
+no-limit: Không giới hạn
+save-limit: Lưu (%limit% 👥)
+
+
+select-user-interaction-title: "Chọn người dùng"
+ # Kick
+kick-command-success-title: "👞 Người dùng đã bị đá"
+kick-command-success-body: "👞 %target% bị đá bởi %author%."
+kick-command-error-must-be-connected: Người dùng phải được kết nối để bị đá.
+kick-command-error-user-is-mod: Bạn không thể đá người điều hành/quản lý máy chủ.
+kick-command-error-user-has-permissions: Bạn không thể loại bỏ %user% vì họ có quyền `Quản lý kênh` trong kênh này.
+kick-interaction-body: |
+  👞 Chọn một thành viên để loại khỏi kênh tạm thời của bạn.
+  
+  ❌ Người dùng không tìm thấy hoặc không kết nối? Nhập `/kick @user` để đá họ.
+
+# Ban
+ban-interaction-body: |
+  ⛔ Chọn một thành viên để cấm khỏi kênh tạm thời của bạn.
+  
+  ❌ Người dùng không tìm thấy hoặc không kết nối? Nhập `/ban @user` để cấm họ.
+  
+user-banned-success-title: "⛔ Người dùng bị cấm"
+user-banned-success-body: "⛔ %target% đã bị cấm từ kênh này."
+
+ban-command-success-title: "⛔ Người dùng đã bị cấm"
+ban-command-success-body: "⛔ %target% đã bị cấm bởi %author%!"
+ban-command-error-must-be-connected: Người dùng phải được kết nối để bị cấm.
+
+# Permit user
+permit-interaction-title: t
+permit-interaction-body: b
+
+# Edit channel
+edited-channel-title: "✏ Kênh đã chỉnh sửa"
+edited-channel-body: |
+  %user% **✏ đã chỉnh sửa** kênh %oldName%.
+  
+  Tên: `%name%`
+  Giới hạn thành viên: `%limit%`
+  Bitrate: `%bitrate%`
+
+### Quick command messages
+
+# Private
+channel-made-private-title: "🚫 Kênh riêng tư"
+channel-made-private-body: "🚫 Kênh này đã được đặt ở chế độ riêng tư."
+
+channel-made-private-with-permit-title: "🚫 Kênh riêng tư"
+channel-made-private-with-permit-body: |
+  🚫 Kênh này đã được đặt ở chế độ riêng tư.
+  
+  👥 Chọn bên dưới người bạn muốn cấp quyền truy cập.
+
+# Public
+channel-made-public-title: "🌐 Kênh công khai"
+channel-made-public-body: "🌐 Kênh này đã được công khai."
+
+# Hidden
+channel-hidden-title: "👻 Kênh bị ẩn"
+channel-hidden-body: "👻 Kênh này đã bị ẩn."
+
+channel-hidden-with-permit-title: "👻 Kênh bị ẩn"
+channel-hidden-with-permit-body: |
+  👻 Kênh này đã được đặt ở chế độ riêng tư.
+  
+  👥 Chọn bên dưới người bạn muốn cấp quyền truy cập.
+
+# Visible
+channel-made-visible-title: "👁 Hiển thị kênh"
+channel-made-visible-body: "👁 Kênh này đã được hiển thị."
+
+# Waiting room
+waiting-room-already-enabled: Phòng chờ đã được kích hoạt.
+waiting-room-already-disabled: Phòng chờ đã bị vô hiệu hóa.
+waiting-room-default-name: "⬇️ Vào %owner%"
+
+waiting-room-enabled-title: "🏠 Phòng chờ đã được kích hoạt"
+waiting-room-enabled-body: "Kênh này hiện có phòng chờ. Kênh của bạn đã được đặt thành 🚫 **Riêng tư** và những người dùng khác sẽ phải tham gia 🏠 **Phòng chờ** của bạn và được bạn chấp nhận trước khi vào."
+
+waiting-room-disabled-title: "🏠 Phòng chờ bị vô hiệu hóa"
+waiting-room-disabled-body: "🏠 **Phòng chờ** đã bị tắt và kênh đã được đặt ở chế độ 🌐 **Công khai**."
+
+waiting-room-approve-body: Bạn đã phê duyệt %user% trong phòng của mình.
+
+# Permit user
+allow-user: "☑ Cho phép người dùng..."
+
+### General errors
+error: Lỗi
+command-error-body: |
+  %error%
+  
+  Nếu bạn cần hỗ trợ thêm, vui lòng tham gia [máy chủ hỗ trợ chính thức](https://empymanager.com/support) hoặc liên hệ với quản trị viên máy chủ.
+target-not-found: Không tìm thấy mục tiêu.
+not-enough-permissions-command: Bạn không có đủ quyền để thực hiện lệnh này tại đây.
+feature-requires-premium: Tính năng của máy chủ này bị vô hiệu hóa. Hãy cân nhắc việc nâng cấp máy chủ của bạn; thêm thông tin về `/premium`.
+command-requires-channel: Bạn phải ở trong kênh tạm thời để sử dụng lệnh này.
+action-requires-channel-owner: Bạn phải là chủ sở hữu kênh người dùng để chỉnh sửa nó.
+must-be-a-manager: Bạn phải là người quản lý để thực hiện lệnh này.
+must-be-a-moderator: Bạn phải là người điều hành để thực hiện lệnh này.
+
+command-disabled-here: Bạn không được phép thực hiện lệnh này ở đây. Liên hệ với quản trị viên máy chủ.
+specify-valid-masterchannel-id: Vui lòng chỉ định id hợp lệ của kênh chính hiện có. [Hãy xem video này](https://www.youtube.com/watch?v=xgjGuA-Xp4g) để biết cách lấy id kênh.
+invalid-masterchannel-id: Kênh có id %channelId% không phải là kênh chính. [Hãy xem video này](https://www.youtube.com/watch?v=xgjGuA-Xp4g) để biết cách lấy id kênh.
+masterchannel-disabled-out-of-slots-error: Kênh chính này đã bị vô hiệu hóa vì nó vượt quá số lượng kênh chính của máy chủ này. Vui lòng sử dụng một cái khác hoặc xem xét hỗ trợ bot bằng `/premium`.
+masterchannel-creation-out-of-slots-error: Bạn không có sẵn nhiều vị trí kênh chính. Vui lòng xóa một trong số chúng hoặc nâng cấp máy chủ lên bản Premium (`/premium`).
+switched-channels-too-fast-error: Này, chậm lại đi! Bạn đang chuyển kênh tạm thời quá nhanh.
+
+no-common-found: Không tìm thấy lệnh %command%.
+command-info: Thông tin lệnh
+
+
+### Other commands
+success: Thành Công.
+success-title: Thành Công
+done: Xong!
+
+# Info
+info-command-title: Thông tin máy chủ
+info-command-body: |
+  Thông tin cho %name%
+  ID máy chủ: `%guildId%`
+  ID phân đoạn: `%shardId%`
+  ID cụm: `%clusterId%`
+
+# Dashboard
+dashboard-command-title: Liên kết trang tổng quan
+dashboard-command-body: "Bạn có thể truy cập bảng điều khiển của máy chủ này tại đây: %link%"
+dashboard-unauthorised-command-body: "Bạn không thể quản lý máy chủ này nhưng bạn có thể truy cập bảng điều khiển của EmpyManager tại đây: %link%"
+
+
+
+# Permanent
+permanent-channel-success-title: Vĩnh viễn
+permanent-channel-success-body: Kênh này đã được đặt vĩnh viễn và sẽ không bị xóa.
+temporary-channel-success-title: "⏲️ Tạm thời"
+temporary-channel-success-body: Kênh này hiện là **⏲️ Tạm thời** và **sẽ bị xóa** sau khi trống.
+cannot-make-more-permanent-channels: Bạn không thể tạo thêm kênh cố định, bạn đang sử dụng %count%/%max% có sẵn cho máy chủ của mình.
+
+# Invites
+invites-disabled-here: Lời mời bị vô hiệu hóa trong máy chủ này vì lý do bảo mật. Yêu cầu quản trị viên máy chủ thực hiện lời mời `%prefix%settings` để biết thêm thông tin.
+enable-invites-title: "Mời"
+invite-disabled-vote-bot: |
+  Vui lòng Vote cho bot [tại đây](https://top.gg/bot/719236419230367798/vote) để mở khóa lời mời cho đến khi phiếu bầu của bạn hợp lệ hoặc đăng ký gói tài trợ (`/premium`).
+enable-invites-body: "Bạn có muốn kích hoạt lời mời trên máy chủ này không?"
+invites-enabled: "Đã bật lời mời."
+invites-disabled: "Lời mời đã bị vô hiệu hóa."
+
+assign-linked-roles-forbidden-error: Thiếu quyền gán/xóa vai trò được liên kết cho người dùng. Vui lòng đảm bảo rằng vai trò của EmpyManager cao hơn vai trò được chỉ định.
+assign-linked-roles-generic-error: "Không thể chỉ định/xóa vai trò được liên kết cho người dùng:"
+
+# Language
+show-current-language-title: Ngôn ngữ hiện tại
+show-current-language-body: |
+  Ngôn ngữ hiện tại là %language%
+  
+  Thay đổi nó?
+
+language-edited-title: Ngôn ngữ đã được chỉnh sửa
+language-edited-body: Ngôn ngữ đã được đặt thành %language%.
+
+# Premium
+not-a-premium-server: "**không phải** một **Máy Chủ Premium**. Một số tính năng, chẳng hạn như số lượng kênh chính, sẽ bị hạn chế."
+a-premium-server: "một **Máy Chủ Premium**."
+a-premium-plus-server: "một **Máy Chủ Premium Plus**."
+enable-premium-here: "Vì bạn là người dùng trả phí nên bạn có thể kích hoạt gói trả phí của mình trong máy chủ này bằng cách kích hoạt `%prefix%premium enable`."
+premium-features: "Xem tất cả các tính năng cao cấp [tại đây](https://dashboard.empymanager.com/premium)."
+premium-must-be-inside-server: Bạn phải ở trong máy chủ này.
+not-premium-provider: Bạn không phải là nhà cung cấp cao cấp của máy chủ này và cũng không phải là quản trị viên.
+no-premium-subscriptions: Không có đăng ký trả phí trong máy chủ này.
+premium-info: |
+  Máy chủ này là %type%
+
+  **Danh sách tính năng đầy đủ [tại đây](https://dashboard.empymanager.com/premium).**
+  Đăng ký trên [Patreon](https://patreon.com/nexgan).
+  Tham gia [Máy chủ Discord](https://empymanager.com/support) chính thứ để biết thêm thông tin hoặc bất kỳ câu hỏi.
+
+# New premium messages
+premium-info-title: "Thông tin Premium"
+premium-info-body: |
+  Loại kế hoạch của bạn: **%userType%**
+  
+  Gói này được kích hoạt trong máy chủ: **%serverType%**
+  
+  %secondPart%
+  
+  %perks%
+
+server-premium-provider: "Nhà cung cấp Premium của máy chủ này là %user%."
+server-premium-disabled-user-not-premium: |
+  %user% là nhà cung cấp Premium cho máy chủ này, nhưng máy chủ này không có gói Premium.
+  
+  Điều này là do %user% không còn là người dùng Premium nữa.
+server-premium-disabled-out-of-slots: |
+  %user% là nhà cung cấp Premium cho máy chủ này, nhưng máy chủ này không có gói Premium.
+  
+  Điều này là do %user% vẫn là người dùng Premium, nhưng gói của họ đã được kích hoạt trong %enabledServers% trong số %maxServers% máy chủ có sẵn cho gói %userType% của họ.
+
+enable-server-premium-user: |
+  Vì bạn là người dùng Premium nên bạn có thể thực hiện `/premium enable` để kích hoạt gói của mình trên máy chủ này!
+
+premium-perks: |
+  Hãy cân nhắc nâng cấp lên **⭐ Premium** để nhận được các đặc quyền sau nếu được bật:
+  • Thêm **Kênh chính** (không giới hạn)
+  • Không cần Vote cho các lệnh
+  • Nhiều kênh cố định hơn
+  • Nhiều vai trò được liên kết hơn
+  • Thêm bảng tự vai trò
+  • Tất cả các cài đặt đã được mở khóa, chẳng hạn như chọn danh mục, ghi nhật ký và hơn thế nữa
+  
+  ⭐ Thêm thông tin [tại đây](%url%)!
+no-premium-provider: "Máy chủ này không có bất kỳ nhà cung cấp Premium nào. Vui lòng kiểm tra id máy chủ."
+disable-premium-no-permission-in-server-error: |
+  Để tắt tính năng trả phí trong máy chủ này, bạn cần phải là quản trị viên hoặc nhà cung cấp dịch vụ trả phí.
+disable-premium-no-permission-no-server-error: |
+  Để tắt tính năng trả phí trên máy chủ đã chọn, bạn phải là nhà cung cấp dịch vụ trả phí hoặc thực hiện lệnh này ở đó với tư cách quản trị viên.
+premium-disabled-body: "Đã tắt thành công gói Premium."
+premium-provider-for-title: "Máy chủ Premium của bạn"
+premium-provider-for-body: |
+  Máy chủ mà bạn là nhà cung cấp Premium cho:
+  %servers%
+  
+  Nhập lệnh gạch chéo `/premium disable <server-id>` để ngừng trở thành nhà cung cấp máy chủ cao cấp trong danh sách.
+  
+  Kế hoạch của bạn: %type%
+  
+  Lưu ý: nếu bạn hạ cấp gói của mình xuống gói có ít chỗ trống hơn thì chỉ những máy chủ đầu tiên mới nhận được đặc quyền! Các máy chủ **được đánh dấu** là những máy chủ hiện đang bật tính năng trả phí.
+no-premium-title: Không premium
+no-premium-body: Bạn không có bất kỳ gói Premium nào! Kiểm tra các gói Premium tại https://dashboard.empymanager.com/premium.
+premium-already-enabled-error: Máy chủ này đã kích hoạt tính năng trả phí! Vui lòng yêu cầu quản trị viên tắt nó đi nếu bạn muốn kích hoạt gói của mình (`/premium disable`).
+premium-max-number-of-servers-reached-error: Bạn đã đạt đến số lượng máy chủ tối đa được kích hoạt cho gói của mình.
+
+premium-enabled-here-body: |
+  Loại Premium %type% đã được bật trong máy chủ này!
+  
+  Vui lòng liên hệ với [support](https://empymanager.com/support) nếu bạn cần trợ giúp.
+  
+  **Mẹo**: bạn luôn có thể vô hiệu hóa gói cao cấp của mình tại đây bằng lệnh `/premium disable` và chuyển nó sang máy chủ khác!
