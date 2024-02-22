@@ -495,6 +495,6 @@ premium-max-number-of-servers-reached-error: Osiągnąłeś już maksymalną lic
 premium-enabled-here-body: |
   Premium typu %type% zostało włączone na tym serwerze!
   
-  Skontaktuj się z wsparciem, jeśli potrzebujesz pomocy.
+  Proszę skontaktować się [ze wsparciem](https://empymanager.com/support), jeśli potrzebujesz pomocy.
   
   **Wskazówka**: zawsze możesz wyłączyć swój plan premium tutaj za pomocą komendy `/premium disable` i przenieść go na inny serwer!
