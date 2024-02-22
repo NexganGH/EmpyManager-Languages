@@ -470,7 +470,7 @@ premium-perks: |
   • Więcej self-role panels
   • Wszystkie odblokowane ustawienia, takie jak wybór kategorii, logowanie i wiele więcej
   
-  ⭐ Więcej informacji tutaj!
+  ⭐ Więcej informacji [tutaj](%url%)!
 no-premium-provider: "Ten serwer nie ma żadnego dostawcy premium. Proszę sprawdzić id serwera."
 disable-premium-no-permission-in-server-error: |
   Aby wyłączyć premium na tym serwerze, musisz być administratorem lub dostawcą premium.
