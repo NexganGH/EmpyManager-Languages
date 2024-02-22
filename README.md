@@ -44,13 +44,13 @@ message-to-translate: |
   message.
 ```
 
-### Keep the same lines.
+### Keep the same lines
 As you translate to another language, please make sure that same position is kept. This
 means that on the same line of the two different files, you will find the same message.
 
 ### Variables
 You will find **variables** in some messages. Those are words surrounded by `%` that
-will be replaced by a dynamic string by the bot. For example in : 
+will be replaced with a dynamic string by the bot. For example in : 
 ```yaml
 tempchannel-panel-title: "%owner%'s Private Chat"
 ```

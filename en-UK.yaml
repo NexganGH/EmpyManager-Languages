@@ -72,12 +72,16 @@ new-bot-added-body: |
   🌟 Thanks for adding me!
   
   Choose an option below: 
-  - Create a **master channel** to start creating **temporary channels**
-  - Change bot's **language**
+  - ✨ Create a **master channel** to start creating **temporary channels**
+  - 🏳️ Change bot's **language**
   
-setup-menu-title: "⚙ Created a Master Channel"
+  Language set to **%language%** (*Not all messages are translated!*)
+
+create-master-channel-button: "Create Master Channel"
+
+setup-menu-title: "✨ Master Channel Created"
 setup-menu-body: |
-  🌟 I've created a **master channel** <#%masterId%> for you! To create a **temporary channel**, you just need to join <#%masterId%>.
+  ✨ I've created a **master channel** <#%masterId%> for you! To create a **temporary channel**, you just need to join <#%masterId%>.
   
   ⚠ I will guide you through the most important configuration steps, but remember you will find **much more options** available in the **[dashboard](https://dashboard.empymanager.com/guilds/%guildId%/masters/%masterId%)**!
   
@@ -86,15 +90,15 @@ setup-menu-body: |
 edit-master-1-title: "⚙ Editing **%name%** (%masterId%) [1/2]"
 edit-master-1-body: |
   **Channel owner permissions**
-  %manageStatus% `Manage Channel` (Rename, edit limit, etc.)
-  %moveStatus% `Move Members` (Ban, Kick)
-  %permissionStatus% `Edit Permissions`
+  📝 %manageStatus% `Manage Channel` (Rename, edit limit, etc.)
+  👥 %moveStatus% `Move Members` (Ban, Kick)
+  🪪 %permissionStatus% `Edit Permissions`
   %quickStatus% `Quick Commands`:
-  - %privateStatus% `Private`
-  - %hideStatus% `Hide`
-  - %waitingStatus% `Waiting Room`
+  - 🚫 %privateStatus% `Private`
+  - 👻 %hideStatus% `Hide`
+  - 🏠 %waitingStatus% `Waiting Room`
   
-  **Permission syncing**: %permSyncing%
+  🔩 **Permission syncing**: %permSyncing%
   
   **Linked roles**: Add one or more roles to be added to users in this temporary channel [here](https://dashboard.empymanager.com/guilds/%guildId%/masters/%masterId%) (`Permissions` tab)
   
@@ -107,11 +111,11 @@ perm-syncing-category: Sync permissions from category
 
 edit-master-2-title: "⚙ Editing **%name%** (%masterId%) [2/2]"
 edit-master-2-body: |
-  **Voice channel template**: `%voiceTemplate%`
+  📝 **Voice channel template**: `%voiceTemplate%`
   
-  **Create separate text channel instead of using the voice chat**: %separateTextStatus%
+  💬 **Create separate text channel instead of using the voice chat**: %separateTextStatus%
   
-  **Personal panel sent in each temporary channel**: %personalPanelStatus%
+  📜 **Personal panel sent in each temporary channel**: %personalPanelStatus%
   
   **Warning**: much more settings can be found in the [dashboard](https://dashboard.empymanager.com/guilds/%guildId%/masters/%masterId%)
   
@@ -124,7 +128,10 @@ edit-master-completed-body: |
   ⚙ Remember that you can find much more settings in the [dashboard](https://dashboard.empymanager.com/guilds/%guildId%/masters/%masterId%). To bring back this setup use the command `/edit`.
   
   💎 If you like the bot, consider subscribing to [Premium](https://dashboard.empymanager.com/premium) to get exclusive features and unlimited master channels.
-  
+
+change-voice-template-modal-title: "Edit Voice Channel Template"
+change-voice-template-text-field-label: "Voice channel template"
+
 setup-no-perm-title: "Creating a Master Channel"
 setup-no-perm-body: |
   Due to Discord's permissions, **Admin** permissions are required for the bot to create a category with correct permissions.
@@ -210,7 +217,8 @@ help-settings-body-2: |
 invite-button-label: Invite to your server
 support-button-label: Get support and suggest features
 dashboard-button-label: Dashboard
-vote-button-label: Vote Bot
+vote-button-label: Vote the bot
+docs-button-label: Docs
 
 ### Commands
 
@@ -339,6 +347,7 @@ waiting-room-approve-body: You have approved %user% in your room.
 allow-user: "☑ Allow a user..."
 
 ### General errors
+
 error: Error
 command-error-body: |
   %error%
