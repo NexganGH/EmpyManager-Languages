@@ -36,7 +36,7 @@ tempchannel-generator-body: |
 
 tempchannel-generator-private-msg: "🚫 `/private` / 🌐 `/public`\n"
 tempchannel-generator-hide-msg: "👻 `/hide` / 👁️ `/show`\n"
-tempchannel-generator-waiting-msg: "🏠 `/waitingroom` - Ustaw swój kanał jako **🚫 prywatny** i utwórz **🏠 pokój oczekujący**.\n"
+tempchannel-generator-waiting-msg: "🏠 `/waitingroom` - Ustaw swój kanał jako **🚫 prywatny** i utwórz **🏠 poczekalnię**.\n"
 tempchannel-generator-manage-msg: "✏ `/rename`, `/limit`, `/bitrate`\n"
 tempchannel-generator-move-msg: "👞 `/kick @user` / ⛔ `/ban @user`\n"
 tempchannel-generator-invite-msg: "🔗 `/invite @user` - Wyślij zaproszenie do użytkownika.\n"
@@ -96,7 +96,7 @@ edit-master-1-body: |
   %quickStatus% `Szybkie komendy`:
   - 🚫 %privateStatus% `Prywatny`
   - 👻 %hideStatus% `Ukryj`
-  - 🏠 %waitingStatus% `Pokój oczekujący`
+  - 🏠 %waitingStatus% `Poczekalnia`
   
   🔩 **Synchronizacja uprawnień**: %permSyncing%
 
@@ -142,7 +142,7 @@ setup-no-perm-body: |
   • Daj wszystkie uprawnienia botowi w kategorii
   • Użyj komendy: /setup-category <category>
   ```
-  setup-no-valid-category-error: Wybierz poprawną kategorię. %channel% nie jest kategorią!
+setup-no-valid-category-error: Wybierz poprawną kategorię. %channel% nie jest kategorią!
 setup-no-perm-in-category: Upewnij się, że EmpyManager ma pełne uprawnienia w wybranej kategorii!
 
 setup-title: "✅ Utworzono kanał główny"
@@ -331,15 +331,15 @@ channel-made-visible-title: "👁 Kanał Widoczny"
 channel-made-visible-body: "👁 Ten kanał stał się widoczny."
 
 # Pokój oczekujący
-waiting-room-already-enabled: Pokój oczekujący jest już włączony.
-waiting-room-already-disabled: Pokój oczekujący jest już wyłączony.
+waiting-room-already-enabled: Poczekalnia jest już włączona.
+waiting-room-already-disabled: Poczekalnia jest już wyłączona.
 waiting-room-default-name: "⬇️ Dołącz do %owner%"
 
-waiting-room-enabled-title: "🏠 Pokój Oczekujący Włączony"
-waiting-room-enabled-body: "Ten kanał ma teraz pokój oczekujący. Twój kanał został ustawiony na 🚫 **Prywatny**, a inni użytkownicy będą musieli dołączyć do twojego 🏠 **Pokoju Oczekującego** i uzyskać twoją zgodę przed wejściem."
+waiting-room-enabled-title: "🏠 Poczekalnia włączona"
+waiting-room-enabled-body: "Ten kanał ma teraz poczekalnię. Twój kanał został ustawiony na 🚫 **Prywatny**, a inni użytkownicy będą musieli dołączyć do twojej 🏠 **Poczekalni** i uzyskać twoją zgodę przed wejściem."
 
-waiting-room-disabled-title: "🏠 Pokój Oczekujący Wyłączony"
-waiting-room-disabled-body: "🏠 **Pokój Oczekujący** został wyłączony, a kanał stał się 🌐 **Publiczny**."
+waiting-room-disabled-title: "🏠 Poczekalnia wyłączona"
+waiting-room-disabled-body: "🏠 **Poczekalnia** została wyłączona, a kanał stał się 🌐 **Publiczny**."
 
 waiting-room-approve-body: Zatwierdziłeś %user% w swoim pokoju.
 
