@@ -20,6 +20,8 @@ tempchannel-show-button: "Show"
 tempchannel-edit-button: "Edit Channel"
 tempchannel-kick-button: "Kick"
 tempchannel-ban-button: "Ban"
+tempchannel-invite-button: "Invite"
+tempchannel-permit-button: "Permit"
 
 tempchannel-generator-title: |
   📝 Control Your Channel
@@ -53,6 +55,7 @@ master-panel-add-body: |
   
   You might be interested in my latest feature: type `/master-panel <master-channel>` to create a panel with bot's commands. It can be useful if you want to have a panel without text channels. 📝
 
+# --- DEPRECATED ---
 bot-added-title: Thanks for adding me!
 bot-added-body: |
   Hello, thanks for adding me to your server!
@@ -66,6 +69,7 @@ bot-added-body: |
   - [Support Server](https://empymanager.com/support)
   - [Docs with tutorials](https://docs.empymanager.com/)
   - [How to create temporary channels](https://docs.empymanager.com/getting-started/create-temporary-channels)
+# ------------------
 
 new-bot-added-title: "🌟 EmpyManager Setup"
 new-bot-added-body: |
@@ -288,8 +292,8 @@ ban-command-success-body: "⛔ %target% was banned by %author%!"
 ban-command-error-must-be-connected: The user must be connected in order to be banned.
 
 # Permit user
-permit-interaction-title: t
-permit-interaction-body: b
+new-permit-interaction-title: "☑️ Permit User"
+new-permit-interaction-body: "Select a user below to **☑️ permit** them into your channel."
 
 # Edit channel
 edited-channel-title: "✏ Edited Channel"
