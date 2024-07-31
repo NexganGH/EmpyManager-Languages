@@ -291,6 +291,26 @@ ban-command-success-title: "⛔ User Was Banned"
 ban-command-success-body: "⛔ %target% was banned by %author%!"
 ban-command-error-must-be-connected: The user must be connected in order to be banned.
 
+# Invites
+
+invite-created-title: "🔗 Invite Created"
+invite-created-body: "I have created this **🔗 invite** for you: %inviteUrl%"
+
+users-invited-title: "🔗 Users Invited"
+users-invited-body: |
+  🔗 Invite: %inviteUrl%
+  
+  - The **🔗 invited users** have now access to your channel
+  - I will send them a DM with the **🔗 invite** (if I can do it!)
+
+user-invited-you-title: "🔗 %userName% Invited you"
+user-invited-you-body: |
+  %user% has **🔗 invited** you to their channel in server %server%! 
+  
+  Click the [🔗 link](%inviteUrl%) to join.
+  
+  *If you wish to stop receiving these messages, please block this bot.*
+
 # Permit user
 new-permit-interaction-title: "☑️ Permit User"
 new-permit-interaction-body: "Select a user below to **☑️ permit** them into your channel."
