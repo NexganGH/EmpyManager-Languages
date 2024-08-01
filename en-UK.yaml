@@ -292,6 +292,12 @@ ban-command-success-body: "⛔ %target% was banned by %author%!"
 ban-command-error-must-be-connected: The user must be connected in order to be banned.
 
 # Invites
+invite-user-interaction-title: "🔗 Invite Users"
+invite-user-interaction-body: |
+  Select the users to **🔗 invite** below.
+  
+  You can also use the command `/invite` to create and **🔗 invite** and share it.
+
 
 invite-created-title: "🔗 Invite Created"
 invite-created-body: "I have created this **🔗 invite** for you: %inviteUrl%"
@@ -303,7 +309,7 @@ users-invited-body: |
   - The **🔗 invited users** have now access to your channel
   - I will send them a DM with the **🔗 invite** (if I can do it!)
 
-user-invited-you-title: "🔗 %userName% Invited you"
+user-invited-you-title: "🔗 %userName% Invited You"
 user-invited-you-body: |
   %user% has **🔗 invited** you to their channel in server %server%! 
   
