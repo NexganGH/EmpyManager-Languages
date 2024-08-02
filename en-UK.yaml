@@ -22,6 +22,7 @@ tempchannel-kick-button: "Kick"
 tempchannel-ban-button: "Ban"
 tempchannel-invite-button: "Invite"
 tempchannel-permit-button: "Permit"
+tempchannel-change-owner-button: "Change Owner"
 
 tempchannel-generator-title: |
   📝 Control Your Channel
@@ -320,6 +321,17 @@ user-invited-you-body: |
 # Permit user
 new-permit-interaction-title: "☑️ Permit User"
 new-permit-interaction-body: "Select a user below to **☑️ permit** them into your channel."
+
+# Change Owner
+change-owner-interaction-title: "👑 Change Owner"
+change-owner-interaction-body: |
+  Select a user below to **transfer 👑 Ownership** of this channel to them. 
+  
+  They will become new **👑 Owner** of this channel and you will become a normal user.
+
+change-owner-success-title: "👑 Owner Changed"
+change-owner-success-body: |
+  %user% is the new 👑 **Owner** of %channel%.
 
 # Edit channel
 edited-channel-title: "✏ Edited Channel"
