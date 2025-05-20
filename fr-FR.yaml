@@ -69,7 +69,7 @@ help-control-body: |
   🔗 `/invite @user` - Invitez un utilisateur sur votre salon (il recevra un message direct).
   Autres commandes: `/rename`, `/limit`, `/bitrate`.
   
-  **Si vous ne voyez pas les commandes slash, demandez à un administrateur de [mettre à jour les permissions du bot]. (https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+  **Si vous ne voyez pas les commandes slash, demandez à un administrateur de [mettre à jour les permissions du bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
 help-settings-subtitle: ⚙️   Paramètres administratifs
 help-settings-body: |
   - Only admins can see this -
