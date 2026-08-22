@@ -1,4 +1,4 @@
-flag: 🇪🇸
+﻿flag: 🇪🇸
 
 ### Most important messages
 
@@ -76,7 +76,7 @@ help-control-body: |
 
   Otros comandos: `/rename`, `/limit`, `/bitrate`.
   
-  **Si no puedes ver los comandos de barra, dígale a un administrador que [actualice los permisos del bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+  **Si no puedes ver los comandos de barra, dígale a un administrador que [actualice los permisos del bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521%20&scope=bot%20applications.commands&guild_id=%guildId%)**
 
 help-settings-subtitle: ⚙️   Configuraciones de administrador
 help-settings-body: |

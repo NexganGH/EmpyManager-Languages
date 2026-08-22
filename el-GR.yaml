@@ -1,4 +1,4 @@
-flag: 🇬🇷
+﻿flag: 🇬🇷
 
 ### Τα πιο Σημαντικά Mηνύματα
 
@@ -76,7 +76,7 @@ help-control-body: |
   
   Άλλες εντολές (commands): `/rename (Μετονομασία)`, `/limit (Όριο χρηστών)`, `/bitrate (Ρυθμός μετάδοσης bit)`.
   
-  **Εάν δεν μπορείτε να δείτε τις εντολές καθέτου (/), ενημερώστε έναν διαχειριστή [για να ανανεώσει τα δικαιώματα του bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+  **Εάν δεν μπορείτε να δείτε τις εντολές καθέτου (/), ενημερώστε έναν διαχειριστή [για να ανανεώσει τα δικαιώματα του bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521%20&scope=bot%20applications.commands&guild_id=%guildId%)**
   
 help-settings-subtitle: ⚙️   Ρυθμίσεις Διαχειριστών
 help-settings-body: |

@@ -1,4 +1,4 @@
-flag: 🇳🇱
+﻿flag: 🇳🇱
 
 ### Most important messages
 
@@ -76,7 +76,7 @@ help-control-body: |
 
   Other commands: `/rename`, `/limit`, `/bitrate`.
   
-  **If you can't see slash commands, tell an admin to [update bot's permissions](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+  **If you can't see slash commands, tell an admin to [update bot's permissions](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521%20&scope=bot%20applications.commands&guild_id=%guildId%)**
 
 help-settings-subtitle: ⚙️   Admin settings
 help-settings-body: |

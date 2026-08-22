@@ -1,4 +1,4 @@
-###############################
+﻿###############################
 ##  Traduzido por: @LoadSec  ##
 ###############################
 
@@ -188,7 +188,7 @@ help-control-body: |
 
   Outros comandos: `/rename`, `/limit`, `/bitrate`.
 
-  **Se você não consegue ver os comandos de barra, peça a um administrador para [atualizar as permissões do bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+  **Se você não consegue ver os comandos de barra, peça a um administrador para [atualizar as permissões do bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521%20&scope=bot%20applications.commands&guild_id=%guildId%)**
 
 help-settings-subtitle: ⚙️   Configurações de Admin
 help-settings-body: |

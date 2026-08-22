@@ -1,4 +1,4 @@
-flag: 🇹🇷
+﻿flag: 🇹🇷
 
 ### Most important messages
 
@@ -129,7 +129,7 @@ help-control-body: |
 
   Diğer komutlar: `/rename`, `/limit`, `/bitrate`.
   
-  **Eğer eğik çizgi komutlarını göremiyorsan bir yöneticiden [botun izinlerini güncellemesini](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%) iste.**
+  **Eğer eğik çizgi komutlarını göremiyorsan bir yöneticiden [botun izinlerini güncellemesini](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521%20&scope=bot%20applications.commands&guild_id=%guildId%) iste.**
 
 help-settings-subtitle: ⚙️   Yönetim ayarları
 help-settings-body: |

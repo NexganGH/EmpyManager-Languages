@@ -129,7 +129,7 @@ help-control-body: |
 
   Другие команды: `/rename`, `/limit`, `/bitrate`.
   
-  **Если вы видете слеш-команды, попросите администратора [обновить права бота].(https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+  **Если вы видете слеш-команды, попросите администратора [обновить права бота].(https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521%20&scope=bot%20applications.commands&guild_id=%guildId%)**
 
 help-settings-subtitle: ⚙️   Настройки администратора
 help-settings-body: |

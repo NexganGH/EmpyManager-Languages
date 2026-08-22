@@ -89,7 +89,7 @@ help-control-body: |
 
   Other commands: `/rename`, `/limit`, `/bitrate`.
   
-  **Якщо ви не бачите команди похилої риски, попросіть адміністратора [оновити дозволи бота](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+  **Якщо ви не бачите команди похилої риски, попросіть адміністратора [оновити дозволи бота](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521%20&scope=bot%20applications.commands&guild_id=%guildId%)**
 
 help-settings-subtitle: ⚙️   Налаштування адміністратора
 help-settings-body: |

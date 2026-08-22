@@ -1,4 +1,4 @@
-flag: 🇻🇳
+﻿flag: 🇻🇳
 
 ### Most important messages
 
@@ -129,7 +129,7 @@ help-control-body: |
 
   Các lệnh khác: `/rename`, `/limit`, `/bitrate`.
   
-  **Nếu bạn không thấy các lệnh gạch chéo, hãy yêu cầu quản trị viên [cập nhật quyền của bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+  **Nếu bạn không thấy các lệnh gạch chéo, hãy yêu cầu quản trị viên [cập nhật quyền của bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521%20&scope=bot%20applications.commands&guild_id=%guildId%)**
 
 help-settings-subtitle: ⚙️   Cài đặt quản trị viên
 help-settings-body: |

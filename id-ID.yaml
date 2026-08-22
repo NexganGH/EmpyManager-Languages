@@ -1,4 +1,4 @@
-flag: 🇮🇩
+﻿flag: 🇮🇩
 
 ### Most important messages
 ### Translate by : Miez#8781
@@ -77,7 +77,7 @@ help-control-body: |
 
   Perintah Lain: `/rename`, `/limit`, `/bitrate`.
   
-  **Jika kamu tidak melihat perintah slash, beritahu admin untuk [membarui izin bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+  **Jika kamu tidak melihat perintah slash, beritahu admin untuk [membarui izin bot](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521%20&scope=bot%20applications.commands&guild_id=%guildId%)**
 
 help-settings-subtitle: ⚙️   Pengaturan Admin
 help-settings-body: |

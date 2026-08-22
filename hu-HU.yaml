@@ -76,7 +76,7 @@ help-control-body: |
 
   Egyéb parancsok: `/rename`, `/limit`, `/bitrate`.
   
-  **Amennyiben nem látod a perjeles parancsokat szólj egy adminisztrátornak, hogy [frissítse a bot engedélyeit](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+  **Amennyiben nem látod a perjeles parancsokat szólj egy adminisztrátornak, hogy [frissítse a bot engedélyeit](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521%20&scope=bot%20applications.commands&guild_id=%guildId%)**
 
 help-settings-subtitle: ⚙️   Adminisztrátor beállítások
 help-settings-body: |

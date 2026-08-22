@@ -76,21 +76,27 @@ new-bot-added-title: "🌟 EmpyManager Setup"
 new-bot-added-body: |
   🌟 Thanks for adding me!
   
-  Choose an option below: 
-  - ✨ Create a **master channel** to start creating **temporary channels**
-  - 🏳️ Change bot's **language**
+  I create **temporary voice channels**: members join one channel, and I give each of them
+  their own — then delete it when they leave. No more dead channels cluttering your server.
   
-  Language set to **%language%** (*Not all messages are translated!*)
+  **Press the button below** and I'll set that up for you in one step.
+  
+  *Language: %language% — change it with the menu below if you'd prefer another.*
 
 create-master-channel-button: "Create Master Channel"
 
 setup-menu-title: "✨ Master Channel Created"
 setup-menu-body: |
-  ✨ I've created a **master channel** <#%masterId%> for you! To create a **temporary channel**, you just need to join <#%masterId%>.
+  ✨ **You're ready to go.** I created a `Temporary Channels` category containing:
   
-  ⚠ I will guide you through the most important configuration steps, but remember you will find **much more options** available in the **[dashboard](https://dashboard.empymanager.com/guilds/%guildId%/masters/%masterId%)**!
+  🔊 <#%masterId%> — the channel members join to get their own
+  📋 `#admin-channel` — where I post logs for you
   
-  ⚙ Click below to start **basic configuration**.
+  ### 👉 Try it now: join <#%masterId%>
+  
+  You'll be moved into a channel of your own straight away. That's the whole idea.
+  
+  Everything below is optional — the defaults already work.
 
 edit-master-1-title: "⚙ Editing **%name%** (%masterId%) [1/2]"
 edit-master-1-body: |
@@ -106,8 +112,7 @@ edit-master-1-body: |
   🔩 **Permission syncing**: %permSyncing%
   
   **Linked roles**: Add one or more roles to be added to users in this temporary channel [here](https://dashboard.empymanager.com/guilds/%guildId%/masters/%masterId%) (`Permissions` tab)
-  
-  **Warning**: much more settings can be found in the [dashboard](https://dashboard.empymanager.com/guilds/%guildId%/masters/%masterId%)
+
 perm-syncing-master-channel: Sync permissions from master channel
 perm-syncing-master-channel-default: (Default) Sync permissions from master channel
 perm-syncing-category: Sync permissions from category
@@ -121,25 +126,28 @@ edit-master-2-body: |
   💬 **Create separate text channel instead of using the voice chat**: %separateTextStatus%
   
   📜 **Personal panel sent in each temporary channel**: %personalPanelStatus%
-  
-  **Warning**: much more settings can be found in the [dashboard](https://dashboard.empymanager.com/guilds/%guildId%/masters/%masterId%)
+
   
 edit-master-completed-title: "⚙ Master Channel Configured"
 edit-master-completed-body: |
-  ✅ Master Channel <#%masterId%> was configured!
+  ✅ **All set.**
   
-  🌟 To create a **temporary channel**, you will just need to join <#%masterId%>.
+  ### 👉 Join <#%masterId%> to see it work
   
-  ⚙ Remember that you can find much more settings in the [dashboard](https://dashboard.empymanager.com/guilds/%guildId%/masters/%masterId%). To bring back this setup use the command `/edit`.
+  You'll get your own channel instantly, with a panel to rename it, lock it, or hide it.
   
-  💎 If you like the bot, consider subscribing to [Premium](https://dashboard.empymanager.com/premium) to get exclusive features and unlimited master channels.
+  Later: `/edit` reopens this setup, and the [dashboard](https://dashboard.empymanager.com/guilds/%guildId%/masters/%masterId%) has the full set of options.
 
 change-voice-template-modal-title: "Edit Voice Channel Template"
 change-voice-template-text-field-label: "Voice channel template"
 
 setup-no-perm-title: "Creating a Master Channel"
 setup-no-perm-body: |
-  Due to Discord's permissions, **Admin** permissions are required for the bot to create a category with correct permissions.
+  I need **Manage Channels** and **Manage Roles** to create the category and set it up.
+  
+  The quickest fix is to [re-authorise me with the right permissions](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521%20&scope=bot%20applications.commands&guild_id=%guildId%) — it takes a few seconds and won't remove any of your settings.
+  
+  Or, if you'd rather not grant them, set it up by hand:
   
   However, you can follow the steps below if you want to avoid giving admin permissions:
   ```
@@ -199,7 +207,7 @@ help-control-body: |
 
   Other commands: `/rename`, `/limit`, `/bitrate`.
   
-  **If you can't see slash commands, tell an admin to [update bot's permissions](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=381715218393%20&scope=bot%20applications.commands&guild_id=%guildId%)**
+  **If you can't see slash commands, tell an admin to [update bot's permissions](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521%20&scope=bot%20applications.commands&guild_id=%guildId%)**
 
 help-settings-subtitle: ⚙️   Admin settings
 help-settings-body: |
