@@ -69,14 +69,9 @@ bot-added-body: |
 
 setup-no-perm-title: "Ana Kanal Oluşturuluyor"
 setup-no-perm-body: |
-  Botun doğru izinlere sahip bir kategori oluşturabilmesi için Discord'un izinleri sebebiyle **Yönetici** izni gereklidir.
+  I need **Manage Channels** and **Manage Roles** to create the category.
   
-  Fakat yönetici izni vermek istemiyorsan aşağıdaki adımları takip edebilirsin:
-  ```
-  • Bir kategori oluştur
-  • Bota bu kategoride tam yetki ekle
-  • Eğik çizgi komutunu kullan: /setup-category <category>
-  ```
+  [Re-authorise me with the right permissions](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521&scope=bot%20applications.commands&guild_id=%guildId%) — it takes a few seconds and keeps all your settings.
 setup-no-valid-category-error: Lütfen geçerli bir kategori seç. %channel% bir kategori değil!
 setup-no-perm-in-category: EmpyManager'ın seçilen kategoride tam yetkiye sahip olduğundan emin ol!
 

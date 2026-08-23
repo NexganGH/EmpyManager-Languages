@@ -29,14 +29,9 @@ bot-added-body: |
 
 setup-no-perm-title: "Oprettelse af en Masterkanal"
 setup-no-perm-body: |
-  På grund af Discords tilladelser kræves **Admin**-tilladelser, for at botten kan oprette en kategori med korrekte tilladelser.
+  I need **Manage Channels** and **Manage Roles** to create the category.
   
-  Du kan dog følge nedenstående trin, hvis du vil undgå at give administratortilladelser:
-  ```
-  • Opret en kategori
-  • Tilføj fulde tilladelser til botten i kategorien
-  • Brug skråstreg kommando: /setup-category <kategori>
-  ```
+  [Re-authorise me with the right permissions](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521&scope=bot%20applications.commands&guild_id=%guildId%) — it takes a few seconds and keeps all your settings.
 setup-no-valid-category-error: Vælg venligst en gyldig kategori. %channel% er ikke en kategori!
 setup-no-perm-in-category: Sørg for, at EmpyManager har fulde tilladelser inden for den valgte kategori!
 

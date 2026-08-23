@@ -69,14 +69,9 @@ bot-added-body: |
 
 setup-no-perm-title: "Создание мастер-канала"
 setup-no-perm-body: |
-  В связи с правами Discord, для создания категории с правильными правами боту необходимы права **Админа**.
+  I need **Manage Channels** and **Manage Roles** to create the category.
   
-  Однако вы можете выполнить следующие шаги, если хотите избежать предоставления прав администратора:
-  ```
-  • Создайте категорию
-  • Предоставьте полные права боту в категории
-  • Используйте слеш-команду: /setup-category <категория>
-  ```
+  [Re-authorise me with the right permissions](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521&scope=bot%20applications.commands&guild_id=%guildId%) — it takes a few seconds and keeps all your settings.
 setup-no-valid-category-error: Пожалуйста, выберите действительную категорию. %channel% не категория!
 setup-no-perm-in-category: Убедитесь, что EmpyManager  имеет полные права внутри выбранной категории!
 

@@ -29,14 +29,9 @@ bot-added-body: |
 
 setup-no-perm-title: "Створення головного каналу"
 setup-no-perm-body: |
-  Через дозволи Discord для створення категорії з правильними дозволами боту потрібні дозволи **адміністратора**.
+  I need **Manage Channels** and **Manage Roles** to create the category.
   
-   Однак ви можете виконати наведені нижче дії, якщо не хочете надавати права адміністратора:
-   ```
-   • Створіть категорію
-   • Додайте повні дозволи для бота в категорії
-   • Використовуйте команду косої риски: /setup-category <категорія>
-  ```
+  [Re-authorise me with the right permissions](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521&scope=bot%20applications.commands&guild_id=%guildId%) — it takes a few seconds and keeps all your settings.
 setup-no-valid-category-error: Виберіть дійсну категорію. %channel% не є категорією!
 setup-no-perm-in-category: Переконайтеся, що EmpyManager має повні дозволи у вибраній категорії!
 

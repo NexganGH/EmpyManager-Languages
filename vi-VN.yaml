@@ -69,14 +69,9 @@ bot-added-body: |
 
 setup-no-perm-title: "Tạo kênh chính"
 setup-no-perm-body: |
-  Do quyền của Discord, bot cần có quyền **Quản trị viên** để tạo danh mục có quyền chính xác.
+  I need **Manage Channels** and **Manage Roles** to create the category.
   
-  Tuy nhiên, bạn có thể làm theo các bước bên dưới nếu muốn tránh cấp quyền quản trị viên:
-  ```
-  • Tạo một danh mục
-  • Thêm toàn quyền cho bot trong danh mục
-  • Sử dụng lệnh gạch chéo: /setup-category <category>
-  ```
+  [Re-authorise me with the right permissions](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521&scope=bot%20applications.commands&guild_id=%guildId%) — it takes a few seconds and keeps all your settings.
 setup-no-valid-category-error: Vui lòng chọn một danh mục hợp lệ. %channel% không phải là một danh mục!
 setup-no-perm-in-category: Đảm bảo EmpyManager có toàn quyền trong danh mục đã chọn!
 

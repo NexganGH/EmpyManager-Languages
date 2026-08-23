@@ -129,14 +129,9 @@ edit-master-completed-body: |
 
 setup-no-perm-title: "Criando um Canal Principal"
 setup-no-perm-body: |
-  Devido às permissões do Discord, são necessárias permissões de **Administrador** para o bot criar uma categoria com permissões corretas.
-
-  No entanto, você pode seguir os passos abaixo se quiser evitar dar permissões de administrador:
-  ```
-  • Crie uma categoria
-  • Adicione permissões totais ao bot na categoria
-  • Use o comando de barra: /setup-category <categoria>
-  ```
+  I need **Manage Channels** and **Manage Roles** to create the category.
+  
+  [Re-authorise me with the right permissions](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521&scope=bot%20applications.commands&guild_id=%guildId%) — it takes a few seconds and keeps all your settings.
 setup-no-valid-category-error: Please choose a valid category. %channel% is not a category!
 setup-no-perm-in-category: Make sure EmpyManager has full permissions inside the selected category!
 

@@ -1,4 +1,4 @@
-flag: 🇵🇱
+﻿flag: 🇵🇱
 
 ### Najważniejsze wiadomości
 
@@ -134,14 +134,9 @@ change-voice-template-text-field-label: "Szablon kanału głosowego"
 
 setup-no-perm-title: "Tworzenie kanału głównego"
 setup-no-perm-body: |
-  Ze względu na uprawnienia Discorda, wymagane są uprawnienia **Administratora** dla bota, aby utworzyć kategorię z odpowiednimi uprawnieniami.
+  I need **Manage Channels** and **Manage Roles** to create the category.
   
-  Jednakże, możesz postępować zgodnie z poniższymi krokami, jeśli chcesz uniknąć nadawania uprawnień administratora:
-  ```
-  • Utwórz kategorię
-  • Daj wszystkie uprawnienia botowi w kategorii
-  • Użyj komendy: /setup-category <category>
-  ```
+  [Re-authorise me with the right permissions](https://discord.com/oauth2/authorize?client_id=719236419230367798&permissions=334581521&scope=bot%20applications.commands&guild_id=%guildId%) — it takes a few seconds and keeps all your settings.
 setup-no-valid-category-error: Wybierz poprawną kategorię. %channel% nie jest kategorią!
 setup-no-perm-in-category: Upewnij się, że EmpyManager ma pełne uprawnienia w wybranej kategorii!
 
